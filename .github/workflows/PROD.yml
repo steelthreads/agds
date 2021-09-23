@@ -26,11 +26,11 @@ jobs:
             ${{ runner.os }}-node-
       - run: yarn install
       - run: yarn build
-      #- run: yarn test 
+      #- run: yarn test
       - run: yarn docs
 
-      - uses: azure/login@v1
-            with:
-              creds: ${{ secrets.AZURE_CREDENTIALS }}
+      # - uses: azure/login@v1
+      #       with:
+      #         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       ## TODO write script to deploy to azure storage

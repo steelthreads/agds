@@ -1,13 +1,12 @@
-
 name: DEPLOY DOCS (MANUAL)
 
 on:
   workflow_dispatch:
     inputs:
       branch:
-        description: 'Branch to deploy'
+        description: "Branch to deploy"
         required: true
-        default: 'main'
+        default: "main"
 
 jobs:
   build:
@@ -22,7 +21,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: "16"
 
       - name: Cache `node_modules`
         uses: actions/cache@v2
@@ -32,14 +31,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - run: yarn install
-
       - run: yarn build
-      #- run: yarn test 
+      #- run: yarn test
       - run: yarn docs
 
-
-      - uses: azure/login@v1
-            with:
-              creds: ${{ secrets.AZURE_CREDENTIALS }}
+      # - uses: azure/login@v1
+      #       with:
+      #         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       ## TODO write script to deploy to azure storage
