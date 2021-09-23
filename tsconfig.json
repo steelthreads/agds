@@ -5,6 +5,7 @@
       "noImplicitReturns": true,
       "noUnusedLocals": true,
       "declaration": true,
-      "emitDeclarationOnly": true
+      "emitDeclarationOnly": true,
+      "jsx": "react"
     },
   }

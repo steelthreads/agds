@@ -1,10 +1,11 @@
+import React = require("react");
 import styled from "styled-components";
 
 interface ButtonProps {
   dark?: boolean;
 }
 
-const Button = styled.button<ButtonProps>`
+const StyledButton = styled.button<ButtonProps>`
   background: red;
   color: #fff;
   border-radius: 4px;
@@ -14,4 +15,8 @@ const Button = styled.button<ButtonProps>`
   padding: 9px 36px;
 `;
 
-export default Button;
+export const Button = React.forwardRef(
+  ({ dark }: React.PropsWithChildren<ButtonProps>, ref) => (
+    <StyledButton dark={dark}></StyledButton>
+  )
+);
