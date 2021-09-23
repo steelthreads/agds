@@ -1,5 +1,4 @@
 module.exports = {
-  plugins: ["babel-plugin-styled-components"],
   ignore: ["components/**/*.stories.tsx"],
   presets: [
     "@babel/preset-typescript",
