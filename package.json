@@ -5,8 +5,9 @@
     "components/*"
   ],
   "scripts": {
-    "build": "lerna exec --parallel -- babel --root-mode upward src/ -d lib --extensions .ts,.tsx",
+    "build:js": "lerna exec --parallel -- babel --root-mode upward src/ -d lib --extensions .ts,.tsx",
     "build:types": "lerna exec --parallel tsc",
+    "build": "yarn build:js && yarn build:types",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "dev": "start-storybook --no-manager-cache -p 6006",
     "docs": "build-storybook -o ./docs"
