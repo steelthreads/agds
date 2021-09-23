@@ -1,0 +1,36 @@
+name: DEPLOY PROD
+
+on:
+  push:
+    tags:
+      - v1.*
+
+jobs:
+  build-and-deploy:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Cache `node_modules`
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - run: yarn install
+      - run: yarn build
+      #- run: yarn test 
+      - run: yarn docs
+
+      - uses: azure/login@v1
+            with:
+              creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      ## TODO write script to deploy to azure storage

@@ -7,7 +7,8 @@
   "scripts": {
     "build": "lerna exec --parallel -- babel --root-mode upward src/ -d lib --extensions .ts,.tsx",
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "dev": "start-storybook --no-manager-cache -p 6006"
+    "dev": "start-storybook --no-manager-cache -p 6006",
+    "docs": "build-storybook -o ./docs"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
