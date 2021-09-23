@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "alwaysStrict": true,
+      "allowSyntheticDefaultImports": true,
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "outDir": "dist",
+      "jsx": "react"
+    },
+    "include": ["components/**/*"],
+    "exclude": ["node_modules/", "components/**/*.stories.tsx"]
+  }
