@@ -7,6 +7,4 @@
       "declaration": true,
       "emitDeclarationOnly": true
     },
-    // "include": ["components/**/*"],
-    // "exclude": ["node_modules/", "components/**/*.stories.tsx"]
   }
