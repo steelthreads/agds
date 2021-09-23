@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-const Button = styled.button`
+interface ButtonProps {
+  dark?: boolean;
+}
+
+const Button = styled.button<ButtonProps>`
   background: red;
   color: #fff;
   border-radius: 4px;

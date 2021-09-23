@@ -1,15 +1,12 @@
 {
     "compilerOptions": {
-      "target": "esnext",
-      "module": "esnext",
-      "moduleResolution": "node",
-      "alwaysStrict": true,
-      "allowSyntheticDefaultImports": true,
+      "module": "CommonJS",
+      "strict": true,
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
       "declaration": true,
-      "emitDeclarationOnly": true,
-      "outDir": "dist",
-      "jsx": "react"
+      "emitDeclarationOnly": true
     },
-    "include": ["components/**/*"],
-    "exclude": ["node_modules/", "components/**/*.stories.tsx"]
+    // "include": ["components/**/*"],
+    // "exclude": ["node_modules/", "components/**/*.stories.tsx"]
   }

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "lib/index.js",
   "module": "src/index.js",
+  "scripts": {
+    "build:types": "tsc"
+  },
   "dependencies": {
     "react": "latest",
     "react-dom": "latest",
