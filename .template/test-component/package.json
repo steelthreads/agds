@@ -3,17 +3,21 @@
   "version": "1.0.0",
   "main": "lib/index.js",
   "module": "src/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build:types": "tsc"
   },
   "dependencies": {
     "react": "latest",
     "react-dom": "latest",
-    "styled-components": "latest"
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@ag.ds/theme": "1.0.0"
   },
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "styled-components": "^5.3.1"
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0"
   }
 }

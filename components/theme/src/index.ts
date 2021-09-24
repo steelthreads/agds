@@ -1,4 +1,4 @@
-export interface FontType {
+export interface ThemeType {
   family: string;
   fontGrid: FontGrid;
 }
@@ -11,7 +11,7 @@ export interface FontParams {
   lineHeight: string;
 }
 
-export const fonts: FontType = {
+export const theme: ThemeType = {
   family:
     '-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"',
   fontGrid: {

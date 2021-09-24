@@ -1,13 +1,12 @@
 import React from "react";
+// there is an open issue about this
 import { ThemeProvider } from "emotion-theming";
-import { fonts } from "@ag.ds/theme";
-
-console.log(fonts);
+import { theme } from "@ag.ds/theme";
 
 export const decorators = [
   (Story, context) => {
     return (
-      <ThemeProvider theme={fonts}>
+      <ThemeProvider theme={theme}>
         <Story />
       </ThemeProvider>
     );

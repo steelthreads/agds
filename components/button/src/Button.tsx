@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { css } from "@emotion/react";
 
 interface ButtonProps {
   dark?: boolean;
@@ -14,11 +13,6 @@ const StyledButton = styled.button<ButtonProps>`
   font-size: 1rem;
   font-weight: 300;
   padding: 9px 36px;
-
-  ${(props) => {
-    // console.log(props.theme);
-    return css``;
-  }}
 `;
 
 export const Button = React.forwardRef(
