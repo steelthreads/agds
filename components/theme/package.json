@@ -4,7 +4,5 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "module": "src/index.ts",
-  "scripts": {
-    "build:types": "tsc"
-  }
+  "scripts": {}
 }
