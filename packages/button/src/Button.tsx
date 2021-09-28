@@ -5,5 +5,5 @@ interface ButtonProps {
 }
 
 export const Button = React.forwardRef(
-    ({dark}: React.PropsWithChildren<ButtonProps>, ref) => <button>Hello</button>
+  ({dark}: React.PropsWithChildren<ButtonProps>, ref) => <button>Hello</button>
 );

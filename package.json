@@ -14,7 +14,7 @@
     "build": "yarn build:js && yarn build:types",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "dev": "start-storybook --no-manager-cache -p 6006",
-    "build:storybook": "build-storybook -o ./docs",
+    "build:storybook": "build-storybook -o ./agds.dev",
     "lint": "eslint . --ext ts,tsx,js",
     "test": "echo \"Error: no tests specified\" && exit 0"
   },

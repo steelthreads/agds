@@ -3,3 +3,7 @@ build
 coverage
 docs
 node_modules
+
+storybook-static
+pancake
+agds.dev
