@@ -2,9 +2,9 @@ import React from "react";
 
 export const decorators = [
   (Story, context) => {
-    return <Story />;
+    return <Story/>;
   },
 ];
 export const parameters = {
-  controls: { expanded: true },
+  controls: {expanded: true},
 };
