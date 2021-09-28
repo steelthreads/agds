@@ -18,7 +18,8 @@
     "dev": "yarn workspace @ag.ds/storybook dev",
     "build:storybook": "yarn workspace @ag.ds/storybook build",
     "lint": "eslint . --ext ts,tsx,js",
-    "test": "echo \"Error: no tests specified\" && exit 0"
+    "test": "echo \"Error: no tests specified\" && exit 0",
+    "types": "tsc --project tsconfig.all.json"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
