@@ -1,18 +1,18 @@
 import React from 'react';
 
-import {Button} from './Button';
+import {Header} from './header';
 
 export default {
-  title: 'Example/Button',
-  component: Button,
+  title: 'Example/Header',
+  component: Header,
   parameters: {},
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => <Header {...args} />;
 
 export const Primary = Template.bind({});
 
 Primary.args = {
   variant: 'primary',
-  children: 'Button',
+  children: 'Header',
 };
