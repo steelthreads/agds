@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Button} from '.';
+import { Button } from '.';
 
 export default {
   title: 'AgDS/Button',
@@ -10,9 +10,16 @@ export default {
 
 const Template = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
+export const Basic = Template.bind({});
 
-Primary.args = {
-  variant: 'primary',
+Basic.args = {
+  dark: true,
   children: 'Button',
 };
+
+export const ComplexLabel = () => (
+  <Button>
+    <span>Hello</span>
+    <span>Hello</span>
+  </Button>
+);
