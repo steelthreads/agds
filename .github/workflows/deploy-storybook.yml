@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'packages/*/src/**/*.stories.tsx'
-      - '.storybook/**'
+#    paths:
+#      - 'packages/*/src/**/*.stories.tsx'
+#      - '.storybook/**'
 
 jobs:
   build:
@@ -35,12 +35,12 @@ jobs:
           restore-keys: ${{ runner.os }}-node-
 
       - name: Install dependencies
-        run: yarn --frozen-lockfile --silent --production
+        run: yarn --frozen-lockfile --silent
 
       - name: Prepare
         run: |
           yarn build
-          yarn build:storybook
+          yarn build:storybook --quiet
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4

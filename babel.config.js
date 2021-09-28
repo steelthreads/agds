@@ -1,10 +1,10 @@
 module.exports = {
-    ignore: ['components/**/*.stories.tsx'],
-    presets: [
-        '@babel/preset-typescript',
-        '@babel/preset-env',
-        '@babel/preset-react',
-    ],
-    minified: true,
-    comments: false,
+  ignore: ['packages/**/*.stories.tsx'],
+  presets: [
+    '@babel/preset-env',
+    '@babel/preset-react',
+    '@babel/preset-typescript',
+  ],
+  minified: true,
+  comments: false,
 };

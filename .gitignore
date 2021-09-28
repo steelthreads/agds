@@ -3,7 +3,7 @@
 .jest-*
 lib
 node_modules
-
 .idea
 
 package-lock.json
+storybook-static/
