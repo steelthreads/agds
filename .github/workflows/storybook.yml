@@ -47,10 +47,3 @@ jobs:
         with:
           branch: gh-pages
           folder: docs
-
-
-      # - uses: azure/login@v1
-      #       with:
-      #         creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      ## TODO write script to deploy to azure storage
