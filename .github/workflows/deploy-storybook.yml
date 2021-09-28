@@ -1,17 +1,21 @@
-name: DEPLOY DOCS (MANUAL)
+name: Deploy Storybook
 
 on:
-  workflow_dispatch:
-    inputs:
-      branch:
-        description: "Branch to deploy"
-        required: true
-        default: "main"
+  push:
+    branches:
+      - main
+    paths:
+      - 'packages/*/src/**/*.stories.tsx'
+      - '.storybook/**'
 
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -21,19 +25,22 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: ${{ matrix.node-version }}
 
       - name: Cache `node_modules`
         uses: actions/cache@v2
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - run: yarn install
-      - run: yarn build
-      #- run: yarn test
-      - run: yarn docs
+          restore-keys: ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: yarn --frozen-lockfile --silent --production
+
+      - name: Prepare
+        run: |
+          yarn build
+          yarn build:storybook
 
       # - uses: azure/login@v1
       #       with:

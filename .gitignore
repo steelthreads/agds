@@ -1,6 +1,9 @@
-
 .log
 .DS_Store
 .jest-*
 lib
 node_modules
+
+.idea
+
+package-lock.json

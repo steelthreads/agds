@@ -1,8 +1,9 @@
-name: CI
-
+name: PR checks
 on:
   pull_request:
     types: [opened, edited, synchronize]
+    branches:
+      - main
 
 jobs:
   build:
@@ -19,18 +20,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: ${{ matrix.node-version }}
 
       - name: Cache `node_modules`
         uses: actions/cache@v2
         with:
           path: "**/node_modules"
           key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - run: yarn install
-      # - run: yarn lint
+          restore-keys: ${{ runner.os }}-node-
 
-      # - run: yarn test
+      - name: Install dependencies
+        run: yarn --frozen-lockfile --silent
 
-      - run: yarn  build
+      - name: Check
+        run: |
+          yarn lint
+          yarn test
+          yarn build

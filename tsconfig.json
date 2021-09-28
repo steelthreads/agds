@@ -8,5 +8,5 @@
       "declaration": true,
       "emitDeclarationOnly": true,
       "jsx": "react"
-    },
+    }
   }

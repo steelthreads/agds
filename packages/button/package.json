@@ -1,16 +1,17 @@
 {
   "name": "@ag.ds/button",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "lib/index.js",
   "module": "src/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build:types": "tsc"
+    "build:types": "tsc",
+    "lint": "echo \"Error: no lint specified\" && exit 0",
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "dependencies": {
-    "react": "latest",
-    "react-dom": "latest",
-    "@ag.ds/theme": "1.0.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "peerDependencies": {
     "react": "^17.0.2",

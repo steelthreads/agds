@@ -1,13 +1,32 @@
-# scripts
+# Set up 
 
-`yarn build`
-runs build across all repos
+Use the correct Node version:
 
-`yarn bootstrap`
-links our root dependencies to our packages
+    nvm use
 
-`yarn dev`
-starts the storybook
+Install packages:
 
-`yarn docs`
-builds static storybook directory
+    yarn 
+
+Run bootstrap process:
+
+    yarn bootstrap  
+
+
+# Scripts
+
+Runs build across all repos:
+
+    yarn build
+
+Link any cross-dependent packages:
+
+    yarn bootstrap
+
+Start the Storybook
+
+    yarn dev
+
+Build static Storybook directory:
+
+    yarn docs
