@@ -5,9 +5,7 @@
   "module": "src/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build:types": "tsc",
-    "lint": "echo \"Error: no lint specified\" && exit 0",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "build:types": "tsc"
   },
   "dependencies": {
     "react": "^17.0.2",
