@@ -1141,7 +1141,7 @@
 
 "@changesets/cli@^2.17.0":
   version "2.17.0"
-  resolved "https://registry.npmjs.org/@changesets/cli/-/cli-2.17.0.tgz"
+  resolved "https://registry.yarnpkg.com/@changesets/cli/-/cli-2.17.0.tgz#cc7ff4f64d029ddd6d87020a012c8cf8c7adde58"
   integrity sha512-UyraYwYst1lTjef+8i80XQ6SqsLaGwi4Sgn9YuDf2xdHA9m+5qQXshHvHVjaTdPTA09rqMBk9yeO7vmAqF4+vQ==
   dependencies:
     "@babel/runtime" "^7.10.4"
