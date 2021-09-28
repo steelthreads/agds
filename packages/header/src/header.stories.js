@@ -1,18 +1,9 @@
 import React from 'react';
 
-import {Header} from './header';
+import {Header} from '.';
 
 export default {
-  title: 'Example/Header',
-  component: Header,
-  parameters: {},
+  title: 'AgDS/Header'
 };
 
-const Template = (args) => <Header {...args} />;
-
-export const Primary = Template.bind({});
-
-Primary.args = {
-  variant: 'primary',
-  children: 'Header',
-};
+export const Basic = () => <Header />;

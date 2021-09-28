@@ -1,11 +1,11 @@
-import React, { createContext, useContext } from 'react';
+import React, {createContext, useContext} from 'react';
 
 export type LinkFactoryType = ({
   href,
   ...props
 }: {
   href: string;
-  [key: string]: any;
+  [key: string]: string | number;
 }) => React.ReactElement;
 
 type State = {
@@ -17,16 +17,15 @@ export const Context = createContext<State>({
 });
 
 export const useLink = () => {
-  const { linkFactory } = useContext(Context);
+  const {linkFactory} = useContext(Context);
   return linkFactory;
 };
 
 type AgdsProviderProps = {
-  children: React.ReactNode;
   linkFactory: LinkFactoryType;
 }
 
-export const AgdsProvider = ({ children, linkFactory }: AgdsProviderProps) => (
+export const AgdsProvider: React.FC<AgdsProviderProps> = ({children, linkFactory}) => (
   <Context.Provider
     value={{
       linkFactory,

@@ -4,6 +4,7 @@
     "outDir": "./lib"
   },
   "include": [
+    "../../agds.d.ts",
     "./src"
   ]
 }

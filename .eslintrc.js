@@ -44,6 +44,7 @@ module.exports = {
       'error',
       'always'
     ],
-    'react/display-name': 'off'
+    'react/display-name': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
   }
 };

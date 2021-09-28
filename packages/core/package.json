@@ -1,6 +1,7 @@
 {
   "name": "@ag.ds/core",
   "version": "0.0.1",
+  "license": "MIT",
   "main": "lib/index.js",
   "module": "src/index.tsx",
   "types": "lib/index.d.ts",
