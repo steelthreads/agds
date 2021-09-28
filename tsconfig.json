@@ -1,12 +1,12 @@
 {
+  "extends": "./tsconfig.base.json",
+  "include": [
+    "**/*.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": ["**/node_modules/**/*"],
   "compilerOptions": {
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "strict": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "jsx": "react"
+    "noEmit": true /* Do not emit outputs. */
   }
 }

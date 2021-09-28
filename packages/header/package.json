@@ -1,15 +1,18 @@
 {
-  "name": "@ag.ds/component",
+  "name": "@ag.ds/header",
   "version": "0.0.1",
+  "license": "MIT",
   "main": "lib/index.js",
-  "module": "src/index.js",
+  "module": "src/index.tsx",
   "types": "lib/index.d.ts",
   "scripts": {
     "build:types": "tsc"
   },
   "dependencies": {
+    "@gold.au/header": "^5.0.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-use": "^17.3.1"
   },
   "peerDependencies": {
     "react": "^17.0.2",

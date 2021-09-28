@@ -46,4 +46,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
-          folder: agds.dev
+          folder: storybook-static

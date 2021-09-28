@@ -1,9 +1,9 @@
 import React from 'react';
 
-import {Button} from './Button';
+import {Button} from '.';
 
 export default {
-  title: 'Example/Button',
+  title: 'AgDS/Button',
   component: Button,
   parameters: {},
 };
