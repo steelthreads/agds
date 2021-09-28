@@ -2,7 +2,7 @@
   "name": "@ag.ds/header",
   "version": "0.0.1",
   "main": "lib/index.js",
-  "module": "src/index.js",
+  "module": "src/index.tsx",
   "types": "lib/index.d.ts",
   "scripts": {
     "build:types": "tsc"

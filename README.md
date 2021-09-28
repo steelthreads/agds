@@ -4,14 +4,9 @@ Use the correct Node version:
 
     nvm use
 
-Install packages:
+Install packages (this also runs `yarn boostrap` on postinstall):
 
     yarn 
-
-Run bootstrap process:
-
-    yarn bootstrap  
-
 
 # Scripts
 
