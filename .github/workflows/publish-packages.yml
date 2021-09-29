@@ -1,9 +1,6 @@
 name: Publish packages
 
-on:
-  push:
-    tags:
-      - v1.*
+on: release
 
 jobs:
   build-and-deploy:
