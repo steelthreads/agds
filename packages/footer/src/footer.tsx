@@ -1,6 +1,7 @@
 import React from 'react';
 import '@gold.au/link-list/lib/css/styles.css';
 import '@gold.au/footer/lib/css/styles.css';
+import './override.css';
 import { useLink } from '@ag.ds/core';
 
 const YEAR = new Date().getFullYear();

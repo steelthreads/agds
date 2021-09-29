@@ -1,5 +1,6 @@
 import React from 'react';
 import '@gold.au/main-nav/lib/css/styles.css';
+import './override.css';
 import { useLink } from '@ag.ds/core';
 import cx from 'classnames';
 

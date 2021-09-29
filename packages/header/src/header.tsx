@@ -1,5 +1,6 @@
 import React from 'react';
 import '@gold.au/header/lib/css/styles.css';
+import './override.css';
 import DaweLogo from './dawe-logo-white.png';
 import { useLink } from '@ag.ds/core';
 
