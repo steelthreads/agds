@@ -4,4 +4,4 @@
 '@ag.ds/main-nav': patch
 ---
 
-Override styling
+Override @gov.au styling with Ag brand
