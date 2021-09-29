@@ -1,5 +1,5 @@
 {
-  "name": "@ag.ds/header",
+  "name": "@ag.ds/footer",
   "version": "0.0.1",
   "license": "MIT",
   "main": "lib/index.js",
@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@ag.ds/core": "0.0.1",
-    "@gold.au/header": "^5.0.0",
+    "@gold.au/footer": "^4.0.0",
+    "@gold.au/link-list": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-use": "^17.3.1"
