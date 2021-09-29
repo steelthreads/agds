@@ -1,6 +1,9 @@
 name: Publish packages
 
-on: release
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build-and-deploy:
@@ -22,7 +25,7 @@ jobs:
           restore-keys: ${{ runner.os }}-node-
 
       - name: Install dependencies
-        run: yarn --frozen-lockfile --silent --production
+        run: yarn --frozen-lockfile --silent
 
       - name: Create "Version Packages" Pull Request --or-- trigger Publish to npm Action
         uses: changesets/action@master
