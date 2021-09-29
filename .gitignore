@@ -2,9 +2,9 @@
 .DS_Store
 .jest-*
 lib
+dist
 node_modules
 .idea
 package-lock.json
-
 storybook-static
 pancake

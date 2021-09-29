@@ -1,36 +1,31 @@
 import React, { createContext, useContext } from 'react';
 
-export type LinkFactoryType = ({
-  href,
-  ...props
-}: {
+type LinkProps = {
   href: string;
-  [key: string]: string | number;
-}) => React.ReactElement;
+  [key: string]: any;
+};
+
+export type LinkFactoryType = ({ href, ...props }: LinkProps) => JSX.Element;
 
 type State = {
-  linkFactory: LinkFactoryType | null;
-};
-
-export const Context = createContext<State>({
-  linkFactory: null,
-});
-
-export const useLink = () => {
-  const { linkFactory } = useContext(Context);
-  return linkFactory;
-};
-
-type AgdsProviderProps = {
   linkFactory: LinkFactoryType;
 };
 
-export const AgdsProvider: React.FC<AgdsProviderProps> = ({ children, linkFactory }) => (
-  <Context.Provider
-    value={{
-      linkFactory,
-    }}
-  >
+export const Context = createContext<State>({
+  linkFactory: () => <></>,
+});
+
+export const useLink = (): LinkFactoryType => {
+  return useContext(Context).linkFactory;
+};
+
+type AgdsProviderProps = {
+  children: JSX.Element | JSX.Element[];
+  linkFactory: LinkFactoryType;
+};
+
+export const AgdsProvider = ({ children, linkFactory }: AgdsProviderProps) => (
+  <Context.Provider value={{ linkFactory }}>
     <div className={'au-grid'}>{children}</div>
   </Context.Provider>
 );

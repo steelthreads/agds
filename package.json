@@ -11,9 +11,9 @@
   "scripts": {
     "postinstall": "yarn bootstrap",
     "clean": "git clean -xdf",
-    "build:js": "lerna exec --parallel -- babel --root-mode upward src/ -d lib --extensions .ts,.tsx",
-    "build:types": "lerna exec --parallel tsc",
-    "build": "yarn build:js && yarn build:types",
+    "tsc": "lerna exec --parallel --no-private tsc",
+    "oneprebuild": "rimraf packages/*/lib",
+    "build": "lerna exec --parallel --no-private yarn build",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "dev": "yarn workspace @ag.ds/storybook dev",
     "build:storybook": "yarn workspace @ag.ds/storybook build",
@@ -42,10 +42,12 @@
     "prettier": "2.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "rimraf": "^3.0.2",
     "typescript": "^4.4.3"
   },
   "dependencies": {
-    "@changesets/cli": "^2.17.0"
+    "@changesets/cli": "^2.17.0",
+    "eslint-plugin-prettier": "^4.0.0"
   },
   "pancake": {
     "auto-save": true,
@@ -82,6 +84,12 @@
     },
     "react": {
       "location": "pancake/react/"
+    },
+    "js": {
+      "minified": true,
+      "modules": false,
+      "location": "pancake/js/",
+      "name": "pancake.min.js"
     }
   }
 }

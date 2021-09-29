@@ -1,11 +1,9 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "./lib",
-    "allowJs": false
+    "outDir": "./lib"
   },
   "include": [
-    "../../agds.d.ts",
     "./src"
   ]
 }

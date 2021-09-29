@@ -6,3 +6,5 @@ node_modules
 
 storybook-static
 pancake
+dist
+lib

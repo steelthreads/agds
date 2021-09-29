@@ -3,18 +3,22 @@
   "version": "0.0.1",
   "license": "MIT",
   "main": "lib/index.js",
+  "types": "lib/index.d.js",
   "module": "src/index.tsx",
-  "types": "lib/index.d.ts",
   "scripts": {
-    "build:types": "tsc"
+    "build": "tsc"
   },
   "dependencies": {
     "@gold.au/buttons": "^4.0.0",
-    "classnames": "^2.3.1",
+    "classnames": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.24",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "peerDependencies": {
+    "@types/react": "^17.0.24",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
