@@ -1,6 +1,13 @@
 # @ag.ds/main-nav
 
+## 0.0.3
+
+### Patch Changes
+
+- ca20590: Override @gov.au styling with Ag brand
+
 ## 0.0.2
+
 ### Patch Changes
 
 - 78219ca: Simple integration with GOLD
