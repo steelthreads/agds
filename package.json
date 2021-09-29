@@ -12,7 +12,7 @@
     "postinstall": "yarn bootstrap",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "clean": "git clean -xdf",
-    "offprebuild": "rimraf packages/*/lib",
+    "prebuild": "rimraf packages/*/lib",
     "build": "lerna exec --no-private yarn build",
     "dev": "yarn workspace @ag.ds/storybook dev",
     "build:storybook": "yarn workspace @ag.ds/storybook build",
