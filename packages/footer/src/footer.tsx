@@ -28,7 +28,7 @@ interface FooterProps {
 
 export const Footer = ({ children }: FooterProps) => {
   return (
-    <footer className="au-footer au-footer--dark" role="contentinfo">
+    <footer className="au-body au-body--dark au-footer au-footer--dark" role="contentinfo">
       <div className="container">
         {children ? (
           <nav className="au-footer__navigation row" aria-label="footer">
