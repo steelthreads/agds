@@ -13,7 +13,7 @@
     "bootstrap": "lerna bootstrap --use-workspaces",
     "clean": "git clean -xdf",
     "offprebuild": "rimraf packages/*/lib",
-    "build": "lerna exec --parallel --no-private yarn build",
+    "build": "lerna exec --no-private yarn build",
     "dev": "yarn workspace @ag.ds/storybook dev",
     "build:storybook": "yarn workspace @ag.ds/storybook build",
     "lint": "eslint . --ext ts,tsx,js",
