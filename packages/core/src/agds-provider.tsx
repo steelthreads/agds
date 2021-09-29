@@ -1,4 +1,4 @@
-import React, {createContext, useContext} from 'react';
+import React, { createContext, useContext } from 'react';
 
 export type LinkFactoryType = ({
   href,
@@ -17,20 +17,20 @@ export const Context = createContext<State>({
 });
 
 export const useLink = () => {
-  const {linkFactory} = useContext(Context);
+  const { linkFactory } = useContext(Context);
   return linkFactory;
 };
 
 type AgdsProviderProps = {
   linkFactory: LinkFactoryType;
-}
+};
 
-export const AgdsProvider: React.FC<AgdsProviderProps> = ({children, linkFactory}) => (
+export const AgdsProvider: React.FC<AgdsProviderProps> = ({ children, linkFactory }) => (
   <Context.Provider
     value={{
       linkFactory,
     }}
   >
-    {children}
+    <div className={'au-grid'}>{children}</div>
   </Context.Provider>
 );
