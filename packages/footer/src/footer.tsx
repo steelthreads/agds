@@ -8,16 +8,23 @@ const YEAR = new Date().getFullYear();
 interface FooterLinkItemProps {
   href: string;
   title: string;
-  external: boolean;
 }
 
-export const FooterLink = ({ href, title, external = true }: FooterLinkItemProps) => {
-  const Link = external ? 'a' : useLink();
+export const FooterLink = ({ href, title }: FooterLinkItemProps) => {
+  const external = href.startsWith('http');
+  if (external) {
+    return (
+      <li>
+        <a href={href} rel={external ? 'external' : undefined}>
+          {title}
+        </a>
+      </li>
+    );
+  }
+  const Link = useLink();
   return (
     <li>
-      <Link href={href} rel={external ? 'external' : undefined}>
-        {title}
-      </Link>
+      <Link href={href}>{title}</Link>
     </li>
   );
 };
@@ -33,7 +40,6 @@ export const Footer = ({ children }: FooterProps) => {
         {children ? (
           <nav className="au-footer__navigation row" aria-label="footer">
             <div className="col-md-3 col-sm-6">
-              <h3 className="au-display-lg">Section</h3>
               <ul className="au-link-list">{children}</ul>
             </div>
           </nav>
@@ -41,7 +47,7 @@ export const Footer = ({ children }: FooterProps) => {
         <div className="row">
           <div className="col-sm-12">
             <div className="au-footer__end">
-              <p>&copy; {YEAR} Commonwealth of Australia, </p>
+              <p style={{ marginBottom: '1em' }}>&copy; {YEAR} Commonwealth of Australia</p>
               <p>
                 We acknowledge the traditional owners of country throughout Australia and recognise their continuing
                 connection to land, waters and culture. We pay our respects to their Elders past, present and emerging.

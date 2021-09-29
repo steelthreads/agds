@@ -1,6 +1,7 @@
 {
   "packages": [
-    "components/*"
+    "packages/*",
+    "storybook"
   ],
   "npmClient": "yarn",
   "useWorkspaces": true,

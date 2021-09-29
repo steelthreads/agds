@@ -10,12 +10,12 @@ export const Basic = () => <Footer />;
 
 export const WithLinks = () => (
   <Footer>
-    <FooterLink href={'/somewhere'} title={'Internal link'} />
+    <FooterLink href={'#somewhere'} title={'Internal link'} />
   </Footer>
 );
 
 export const WithExternalLinks = () => (
   <Footer>
-    <FooterLink href={'https://gold.designsystemau.org'} title={'GOLD'} external={true} />
+    <FooterLink href={'https://gold.designsystemau.org'} title={'GOLD'} />
   </Footer>
 );

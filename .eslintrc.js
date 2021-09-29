@@ -1,50 +1,31 @@
 module.exports = {
   env: {
-    'browser': true,
-    'es2021': true,
-    'node': true
+    browser: true,
+    es2021: true,
+    node: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier'
-  ],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    'ecmaFeatures': {
-      'jsx': true
+    ecmaFeatures: {
+      jsx: true,
     },
-    'ecmaVersion': 12,
-    'sourceType': 'module'
+    ecmaVersion: 12,
+    sourceType: 'module',
   },
   settings: {
-    'react': {
-      'version': 'detect'
-    }
+    react: {
+      version: 'detect',
+    },
   },
-  plugins: [
-    'react',
-    '@typescript-eslint'
-  ],
+  plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
-    'indent': [
-      'error',
-      2
-    ],
-    'linebreak-style': [
-      'error',
-      'unix'
-    ],
-    'quotes': [
-      'error',
-      'single'
-    ],
-    'semi': [
-      'error',
-      'always'
-    ],
+    'prettier/prettier': 'error',
+    indent: ['error', 2],
+    'linebreak-style': ['error', 'unix'],
+    quotes: ['error', 'single'],
+    semi: ['error', 'always'],
     'react/display-name': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
-  }
+  },
 };
