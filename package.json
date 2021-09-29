@@ -10,16 +10,17 @@
   },
   "scripts": {
     "postinstall": "yarn bootstrap",
-    "clean": "git clean -xdf",
-    "tsc": "lerna exec --parallel --no-private tsc",
-    "oneprebuild": "rimraf packages/*/lib",
-    "build": "lerna exec --parallel --no-private yarn build",
     "bootstrap": "lerna bootstrap --use-workspaces",
+    "clean": "git clean -xdf",
+    "offprebuild": "rimraf packages/*/lib",
+    "build": "lerna exec --parallel --no-private yarn build",
     "dev": "yarn workspace @ag.ds/storybook dev",
     "build:storybook": "yarn workspace @ag.ds/storybook build",
     "lint": "eslint . --ext ts,tsx,js",
     "test": "echo \"Error: no tests specified\" && exit 0",
-    "types": "tsc --project tsconfig.all.json"
+    "types": "tsc --project tsconfig.all.json",
+    "pkgs:release": "yarn build && changeset publish",
+    "pkgs:version": "changeset version"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",

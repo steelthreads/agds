@@ -35,5 +35,6 @@ jobs:
       - name: Check
         run: |
           yarn lint
+          yarn types
           yarn test
           yarn build
