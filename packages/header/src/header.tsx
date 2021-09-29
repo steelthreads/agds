@@ -21,7 +21,7 @@ export const Header = ({
   const Link = useLink();
   return (
     <header className="au-grid au-header au-header--dark" role="banner">
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
           <div className="col-md-9">
             <Link className="au-header__brand" href={href}>
