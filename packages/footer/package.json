@@ -1,6 +1,6 @@
 {
   "name": "@ag.ds/footer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.js",
@@ -9,7 +9,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@ag.ds/core": "0.0.1",
+    "@ag.ds/core": "0.0.2",
     "@gold.au/footer": "^4.0.0",
     "@gold.au/link-list": "^4.0.0"
   },

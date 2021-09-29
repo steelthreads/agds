@@ -1,6 +1,6 @@
 {
   "name": "@ag.ds/header",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.js",
@@ -9,7 +9,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@ag.ds/core": "0.0.1",
+    "@ag.ds/core": "0.0.2",
     "@gold.au/header": "^5.0.0"
   },
   "devDependencies": {
