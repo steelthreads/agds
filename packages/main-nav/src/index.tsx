@@ -1,1 +1,1 @@
-export { MainNav } from './main-nav';
+export { MainNav, NavLink } from './main-nav';

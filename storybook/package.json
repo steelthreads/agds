@@ -15,6 +15,9 @@
   },
   "dependencies": {
     "@ag.ds/core": "0.0.2",
+    "@ag.ds/header": "0.0.2",
+    "@ag.ds/footer": "0.0.2",
+    "@ag.ds/main-nav": "0.0.2",
     "@types/react": "^17.0.24"
   }
 }
