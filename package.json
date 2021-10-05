@@ -36,7 +36,7 @@
     "dep:check": "manypkg check && preconstruct build && preconstruct dev",
     "lint": "eslint . --ext ts,tsx,js",
     "format": "yarn lint --fix",
-    "types": "tsc --c tsconfig.all.json",
+    "types": "tsc -p tsconfig.all.json",
     "test": "echo \"Error: no test specified\" && exit 0",
     "pkgs:release": "yarn build && changeset publish",
     "pkgs:version": "changeset version"
