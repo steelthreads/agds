@@ -11,11 +11,11 @@ try {
 
   const output = `
 /* This file is generated - DO NOT EDIT */
-import { Global, css } from '@emotion/react';
+import { Global } from '@emotion/react';
 import React from 'react';
 
 const PancakeCss = () => (
-  <Global styles={css\`` + css + `\`} />
+  <Global styles={\`` + css + `\`} />
 )
 
 export default PancakeCss;
