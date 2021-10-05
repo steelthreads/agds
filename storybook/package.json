@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "@ag.ds/core": "0.0.3",
-    "@ag.ds/footer": "0.0.3",
-    "@ag.ds/header": "0.0.3",
-    "@ag.ds/main-nav": "0.0.3"
+    "@ag.ds/footer": "0.0.4",
+    "@ag.ds/header": "0.0.4",
+    "@ag.ds/main-nav": "0.0.4"
   },
-  "repository": "null//github.com/null/github.com/tree/main/storybook"
+  "repository": "https://github.com/steelthreads/agds/tree/main/storybook"
 }
