@@ -1,5 +1,12 @@
 # @ag.ds/footer
 
+## 0.0.7
+
+### Patch Changes
+
+- Updated dependencies [21f58d2]
+  - @ag.ds/core@0.0.6
+
 ## 0.0.6
 
 ### Patch Changes
