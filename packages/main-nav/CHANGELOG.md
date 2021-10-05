@@ -1,5 +1,13 @@
 # @ag.ds/main-nav
 
+## 0.0.4
+
+### Patch Changes
+
+- b72f8b6: Components have versioned styles
+- Updated dependencies [b72f8b6]
+  - @ag.ds/core@0.0.3
+
 ## 0.0.3
 
 ### Patch Changes
