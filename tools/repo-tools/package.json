@@ -1,0 +1,12 @@
+{
+  "name": "@ag.ds/repo-tools",
+  "private": true,
+  "version": "0.0.1",
+  "license": "MIT",
+  "bin": {
+    "pancake-to-react": "./bin/pancake-to-react.js"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  }
+}

@@ -22,6 +22,12 @@ Runs build across all repos:
 
     yarn build
 
+Rebuild pancake (GOLD Design System) and compile to React (for @ag.ds/core):
+
+    yarn pancake
+    
+    yarn pancake-to-react
+
 ## Publish 
 
 All commits must have a [Changeset](https://github.com/changesets/changesets):
