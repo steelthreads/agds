@@ -1,7 +1,7 @@
 {
   "name": "@ag.ds/repo-tools",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "bin": {
     "pancake-to-react": "./bin/pancake-to-react.js"
