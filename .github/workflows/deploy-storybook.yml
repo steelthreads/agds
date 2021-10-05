@@ -1,9 +1,11 @@
-name: Publish packages
+name: Deploy Storybook
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'storybook/**'
 
 jobs:
   build-and-deploy:
@@ -23,12 +25,13 @@ jobs:
       - name: Install dependencies
         run: yarn --frozen-lockfile --silent
 
-      - name: Create "Version Packages" Pull Request --or-- trigger Publish to npm Action
-        uses: changesets/action@master
+      - name: Prepare Storybook
+        run: |
+          yarn build
+          yarn build:storybook --quiet
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          publish: yarn pkgs:release
-          version: yarn pkgs:version
-          title: "Version and Release Packages"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          branch: gh-pages
+          folder: storybook-static

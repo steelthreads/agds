@@ -21,7 +21,6 @@ Incorporate the Provider component in your app:
         linkFactory={({ href, children, className, ...props }) => {
           return (
             <NextLink href={href} {...props}>
-              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a className={className}>{children}</a>
             </NextLink>
           );

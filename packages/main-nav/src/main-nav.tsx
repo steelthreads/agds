@@ -9,9 +9,8 @@ interface NavLinkProps {
   active?: boolean;
 }
 
-export const NavLink = ({ href, title, active = false }: NavLinkProps) => {
+export const MainNavLink = ({ href, title, active = false }: NavLinkProps) => {
   const Link = useLink();
-  console.log({ href, title, active });
   return (
     <li className={cx(active && 'active')}>
       <Link href={href}>{title}</Link>
@@ -21,7 +20,7 @@ export const NavLink = ({ href, title, active = false }: NavLinkProps) => {
 
 interface MainNavProps {
   dark?: boolean;
-  children: React.ReactElement<typeof NavLink>[];
+  children: React.ReactElement<typeof MainNavLink>[];
 }
 
 export const MainNav = ({ dark = true, children }: MainNavProps) => {
@@ -32,7 +31,7 @@ export const MainNav = ({ dark = true, children }: MainNavProps) => {
           background-color: #0A1931;
           border-color: #F36C52;
         }
-        
+
         .au-main-nav.au-main-nav--dark .au-main-nav__menu {
           background-color: #0A1931;
         }
