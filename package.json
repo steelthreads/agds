@@ -27,7 +27,7 @@
     "typescript": "^4.4.3"
   },
   "scripts": {
-    "postinstall": "yarn preconstruct dev && yarn copy:pancake",
+    "postinstall": "yarn preconstruct dev",
     "dev": "manypkg run @ag.ds/storybook dev",
     "build:storybook": "manypkg run @ag.ds/storybook build",
     "build": "preconstruct build",
@@ -84,7 +84,7 @@
         "ie 9",
         "ie 10"
       ],
-      "location": "packages/core/src/__generated__/",
+      "location": "pancake/css/",
       "name": "pancake.min.css"
     },
     "sass": {
