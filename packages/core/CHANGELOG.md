@@ -1,5 +1,11 @@
 # @ag.ds/core
 
+## 0.0.6
+
+### Patch Changes
+
+- 21f58d2: Fixes an issue with Global css rendering
+
 ## 0.0.5
 
 ### Patch Changes

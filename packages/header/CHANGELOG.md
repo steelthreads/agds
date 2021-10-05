@@ -1,5 +1,13 @@
 # @ag.ds/header
 
+## 0.0.7
+
+### Patch Changes
+
+- 21f58d2: Fixes an issue with Global css rendering
+- Updated dependencies [21f58d2]
+  - @ag.ds/core@0.0.6
+
 ## 0.0.6
 
 ### Patch Changes

@@ -1,11 +1,11 @@
 {
   "name": "@ag.ds/footer",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "MIT",
   "main": "dist/ag.ds-footer.cjs.js",
   "module": "dist/ag.ds-footer.esm.js",
   "dependencies": {
-    "@ag.ds/core": "0.0.5",
+    "@ag.ds/core": "0.0.6",
     "@babel/runtime": "^7.15.4",
     "@gold.au/footer": "^4.0.0",
     "@gold.au/link-list": "^4.0.0"
