@@ -1,5 +1,11 @@
 # @ag.ds/main-nav
 
+## 0.0.8
+
+### Patch Changes
+
+- 684115d: Rename NavLink to MainNavLink
+
 ## 0.0.7
 
 ### Patch Changes
