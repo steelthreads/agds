@@ -28,7 +28,7 @@
   },
   "scripts": {
     "postinstall": "yarn preconstruct dev && yarn copy:pancake",
-    "copy:pancake": "cp ../../pancake/css/pancake.min.css ./packages/core/src/__generated__/",
+    "copy:pancake": "cp ./pancake/css/pancake.min.css ./packages/core/src/__generated__/",
     "dev": "manypkg run @ag.ds/storybook dev",
     "build:storybook": "manypkg run @ag.ds/storybook build",
     "build": "preconstruct build",
