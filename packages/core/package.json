@@ -1,6 +1,6 @@
 {
   "name": "@ag.ds/core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "dist/ag.ds-core.cjs.js",
   "module": "dist/ag.ds-core.esm.js",

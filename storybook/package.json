@@ -1,6 +1,6 @@
 {
   "name": "@ag.ds/storybook",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "start-storybook -p 6006",
@@ -14,7 +14,7 @@
     "@storybook/react": "^6.3.8"
   },
   "dependencies": {
-    "@ag.ds/core": "0.0.2"
+    "@ag.ds/core": "0.0.3"
   },
   "repository": "null//github.com/steelthreads/agds/tree/main/storybook"
 }
