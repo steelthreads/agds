@@ -16,10 +16,6 @@ export const WithLinks = () => (
 
 export const WithExternalLinks = () => (
   <Footer>
-    <FooterLink href={'https://www.awe.gov.au/about/contact'} title={'Contact us'} />
-    <FooterLink href={'https://www.awe.gov.au/about/commitment/accessibility'} title={'Accessibility'} />
-    <FooterLink href={'https://www.awe.gov.au/disclaimer'} title={'Disclaimer'} />
-    <FooterLink href={'https://www.awe.gov.au/about/commitment/privacy'} title={'Privacy'} />
-    <FooterLink href={'https://gold.designsystemau.org'} title={'Copyright'} />
+    <FooterLink href={'https://gold.designsystemau.org'} title={'GOLD'} />
   </Footer>
 );
