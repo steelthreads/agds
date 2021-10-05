@@ -1,6 +1,6 @@
 {
   "name": "@ag.ds/storybook",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "@ag.ds/core": "0.0.6",
-    "@ag.ds/footer": "0.0.7",
+    "@ag.ds/footer": "0.0.8",
     "@ag.ds/header": "0.0.7",
-    "@ag.ds/main-nav": "0.0.7"
+    "@ag.ds/main-nav": "0.0.8"
   },
   "repository": "https://github.com/steelthreads/agds/tree/main/storybook"
 }

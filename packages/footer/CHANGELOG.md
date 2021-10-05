@@ -1,5 +1,11 @@
 # @ag.ds/footer
 
+## 0.0.8
+
+### Patch Changes
+
+- 684115d: Footer can handle a long list of links
+
 ## 0.0.7
 
 ### Patch Changes
