@@ -29,3 +29,7 @@ All commits must have a [Changeset](https://github.com/changesets/changesets):
     yarn changeset
 
 Changes will be published from CI on merge to `main` branch. 
+
+To register no change, add an empty Changeset with:
+
+    yarn changeset --empty 
