@@ -9,8 +9,7 @@ const DEST_FILE = path.join(__dirname, '../../../packages/core/src/__generated__
 try {
   const css = readFileSync(SOURCE_FILE, 'utf8');
 
-  const output = `
-/* This file is generated - DO NOT EDIT */
+  const output = `/* This file is generated - DO NOT EDIT */
 import { Global } from '@emotion/react';
 import React from 'react';
 
@@ -23,7 +22,7 @@ export default PancakeCss;
 
   outputFileSync(DEST_FILE, output, 'utf8');
 } catch (error) {
-  console.error('Could not create pancake.min.css.js', { error });
+  console.error('Could not create pancake-css.js', { error });
 }
 
 

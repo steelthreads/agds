@@ -45,15 +45,15 @@ export const Footer = ({ children }: FooterProps) => {
         <div className="container">
           {children ? (
             <nav className="au-footer__navigation row" aria-label="footer">
-              <div className="col-md-3 col-sm-6">
-                <ul className="au-link-list">{children}</ul>
+              <div className="col-sm-12">
+                <ul className="au-link-list au-link-list--inline">{children}</ul>
               </div>
             </nav>
           ) : null}
           <div className="row">
             <div className="col-sm-12">
               <div className="au-footer__end">
-                <p style={{ marginBottom: '1em' }}>&copy; {YEAR} Commonwealth of Australia</p>
+                <p style={{ marginBottom: '1em' }}>&copy; {YEAR} Department of Agriculture, Water and the Environment</p>
                 <p>
                   We acknowledge the traditional owners of country throughout Australia and recognise their continuing
                   connection to land, waters and culture. We pay our respects to their Elders past, present and emerging.
