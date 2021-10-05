@@ -22,13 +22,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache `node_modules`
-        uses: actions/cache@v2
-        with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock.json') }}
-          restore-keys: ${{ runner.os }}-node-
-
       - name: Install dependencies
         run: yarn --frozen-lockfile --silent
 
