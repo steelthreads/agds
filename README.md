@@ -22,6 +22,10 @@ Runs build across all repos:
 
     yarn build
 
+Rebuild pancake (GOLD Design System):
+
+    yarn pancake
+
 ## Publish 
 
 All commits must have a [Changeset](https://github.com/changesets/changesets):
