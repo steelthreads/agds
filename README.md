@@ -2,6 +2,11 @@
 
 A system of React Components used by the Department of Agriculture's Export Service apps.
 
+**How to use this library:**
+
+* Docs 👉 [https://agds.dev](https://agds.dev)
+* Read [USAGE.md](./USAGE.md)
+
 ## Set up 
 
 Use the correct Node version:

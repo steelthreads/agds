@@ -3,11 +3,9 @@ import { AgdsProvider } from '@ag.ds/core';
 
 export const AgdsDecorator = (Story: React.ElementType) => (
   <AgdsProvider
-    linkFactory={({ href, children, ...props }) => (
-      <a href={href} {...props}>
-        {children}
-      </a>
-    )}
+    linkFactory={({ children, href, ...rest }) => {
+      return <a href={href} {...rest}>{children}</a>;
+    }}
   >
     <Story />
   </AgdsProvider>

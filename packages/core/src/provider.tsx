@@ -1,5 +1,5 @@
 import React, { createContext, useContext } from 'react';
-import { Link, LinkProps  } from './default-link';
+import { Link, LinkProps } from './default-link';
 
 import PancakeCss from './__generated__/pancake-css';
 
@@ -11,7 +11,7 @@ type State = {
 };
 
 export const Context = createContext<State>({
-  linkFactory: () => <></>,
+  linkFactory: Link,
 });
 
 export const useLink = (): LinkFactoryType => {

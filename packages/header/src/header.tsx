@@ -27,7 +27,7 @@ export const Header = ({
           background-color: #162845;
         }
       `} />
-      <header className="au-grid au-header au-header--dark" role="banner">
+      <header className="au-header au-header--dark" role="banner">
         <div className="container">
           <div className="row">
             <div className="col-md-9">
