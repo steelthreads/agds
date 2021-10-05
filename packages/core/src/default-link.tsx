@@ -2,8 +2,7 @@ import React from 'react';
 
 export type LinkProps = {
   href: string;
-  // eslint-disable-next-line no-undef
-  children: JSX.Element | JSX.Element[];
+  children: any; // TODO
   [key: string]: any;
 };
 

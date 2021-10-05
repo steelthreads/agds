@@ -20,7 +20,8 @@ export const useLink = (): LinkFactoryType => {
 
 type AgdsProviderProps = {
   linkFactory?: LinkFactoryType;
-  children: any; // TODO
+  // eslint-disable-next-line no-undef
+  children: JSX.Element | JSX.Element[];
 };
 
 export const AgdsProvider = ({ linkFactory = Link, children }: AgdsProviderProps) => {
