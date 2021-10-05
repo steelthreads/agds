@@ -2,3 +2,4 @@ dist/
 node_modules/
 pancake/
 storybook-static/
+__generated__/

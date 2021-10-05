@@ -1,6 +1,7 @@
 import React, { createContext, useContext } from 'react';
-import { Global } from '@emotion/react';
 import { Link, LinkProps  } from './default-link';
+
+import PancakeCss from './__generated__/pancake-css';
 
 // eslint-disable-next-line no-unused-vars, no-undef
 export type LinkFactoryType = (props: LinkProps) => JSX.Element;
@@ -26,7 +27,7 @@ type AgdsProviderProps = {
 export const AgdsProvider = ({ linkFactory = Link, children }: AgdsProviderProps) => {
   return (
     <>
-      <Global styles={require('./__generated/pancake.min.css.js')} />
+      <PancakeCss />
       <Context.Provider value={{ linkFactory }}>
         <div className={'au-body au-grid'}>{children}</div>
       </Context.Provider>

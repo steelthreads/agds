@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "bin": {
-    "prepare-pancake-css": "./bin/prepare-pancake-css.js"
+    "pancake-to-react": "./bin/pancake-to-react.js"
   },
   "dependencies": {
     "fs-extra": "^10.0.0"

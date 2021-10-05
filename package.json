@@ -28,7 +28,7 @@
     "typescript": "^4.4.3"
   },
   "scripts": {
-    "postinstall": "yarn preconstruct dev && prepare-pancake-css",
+    "postinstall": "yarn preconstruct dev && pancake-to-react",
     "dev": "manypkg run @ag.ds/storybook dev",
     "build:storybook": "manypkg run @ag.ds/storybook build",
     "build": "preconstruct build",
