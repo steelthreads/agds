@@ -18,5 +18,5 @@
     "@emotion/react": "^11.4.1",
     "react": "^17.0.2"
   },
-  "repository": "null//github.com/steelthreads/agds/tree/main/packages/footer"
+  "repository": "https://github.com/steelthreads/agds/tree/main/packages/footer"
 }

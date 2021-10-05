@@ -3,12 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "homepage": "https://github.com:steelthreads/agds",
-  "repository": "null//github.com/steelthreads/agds",
+  "repository": "https://github.com/steelthreads/agds",
   "license": "MIT",
-  "workspaces": [
-    "packages/*",
-    "storybook"
-  ],
   "engines": {
     "node": "^14"
   },
@@ -32,18 +28,23 @@
   },
   "scripts": {
     "postinstall": "yarn preconstruct dev",
-    "dev": "yarn workspace @ag.ds/storybook dev",
-    "build:storybook": "yarn workspace @ag.ds/storybook build",
+    "dev": "manypkg run @ag.ds/storybook dev",
+    "build:storybook": "manypkg run @ag.ds/storybook build",
     "build": "preconstruct build",
     "clean": "git clean -xdf",
     "dep:fix": "manypkg fix && preconstruct fix",
     "dep:check": "manypkg check && preconstruct build && preconstruct dev",
     "lint": "eslint . --ext ts,tsx,js",
-    "types": "tsc",
+    "format": "yarn lint --fix",
+    "types": "tsc -p tsconfig.all.json",
     "test": "echo \"Error: no test specified\" && exit 0",
     "pkgs:release": "yarn build && changeset publish",
     "pkgs:version": "changeset version"
   },
+  "workspaces": [
+    "packages/*",
+    "storybook"
+  ],
   "preconstruct": {
     "packages": [
       "packages/*"
