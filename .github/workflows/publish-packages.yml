@@ -39,7 +39,6 @@ jobs:
 
       - name: Prepare Storybook
         run: |
-          yarn build
           yarn build:storybook --quiet
 
       - name: Deploy 🚀
