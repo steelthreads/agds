@@ -9,7 +9,8 @@ All apps require Core:
 Then add packages:
     
     yarn add @ag.ds/header @ag.ds/footer @ag.ds/main-nav
-    
+
+Don't forget to add `pancake/` to your project's gitignore.     
     
 ## 2. Set up Core
 

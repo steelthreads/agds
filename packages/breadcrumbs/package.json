@@ -1,0 +1,21 @@
+{
+  "name": "@ag.ds/breadcrumbs",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/ag.ds-breadcrumbs.cjs.js",
+  "module": "dist/ag.ds-breadcrumbs.esm.js",
+  "dependencies": {
+    "@ag.ds/core": "0.0.6",
+    "@babel/runtime": "^7.15.4",
+    "@gold.au/breadcrumbs": "^4.0.0"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.4.0",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.4.1",
+    "react": "^17.0.2"
+  },
+  "repository": "https://github.com/steelthreads/agds/tree/main/packages/breadcrumbs"
+}
