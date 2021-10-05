@@ -1,5 +1,13 @@
 # @ag.ds/main-nav
 
+## 0.0.5
+
+### Patch Changes
+
+- 0f953d4: Components include override css
+- Updated dependencies [0f953d4]
+  - @ag.ds/core@0.0.4
+
 ## 0.0.4
 
 ### Patch Changes
