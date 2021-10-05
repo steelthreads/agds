@@ -1,5 +1,12 @@
 # @ag.ds/header
 
+## 0.0.6
+
+### Patch Changes
+
+- Updated dependencies [6c26a6b]
+  - @ag.ds/core@0.0.5
+
 ## 0.0.5
 
 ### Patch Changes

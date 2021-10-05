@@ -1,5 +1,15 @@
 # @ag.ds/storybook
 
+## 0.0.3
+
+### Patch Changes
+
+- Updated dependencies [6c26a6b]
+  - @ag.ds/core@0.0.5
+  - @ag.ds/footer@0.0.6
+  - @ag.ds/header@0.0.6
+  - @ag.ds/main-nav@0.0.6
+
 ## 0.0.2
 
 ### Patch Changes
