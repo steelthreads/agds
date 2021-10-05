@@ -1,0 +1,22 @@
+{
+  "name": "@ag.ds/main-nav",
+  "version": "0.0.3",
+  "license": "MIT",
+  "main": "dist/ag.ds-main-nav.cjs.js",
+  "module": "dist/ag.ds-main-nav.esm.js",
+  "dependencies": {
+    "@ag.ds/core": "0.0.2",
+    "@babel/runtime": "^7.15.4",
+    "@gold.au/main-nav": "^2.0.0",
+    "classnames": "^2.3.1"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.4.0",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.4.1",
+    "react": "^17.0.2"
+  },
+  "repository": "null//github.com/steelthreads/agds/tree/main/packages/main-nav"
+}

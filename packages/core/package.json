@@ -1,0 +1,21 @@
+{
+  "name": "@ag.ds/core",
+  "version": "0.0.2",
+  "license": "MIT",
+  "main": "dist/ag.ds-core.cjs.js",
+  "module": "dist/ag.ds-core.esm.js",
+  "dependencies": {
+    "@babel/runtime": "^7.15.4",
+    "@gold.au/core": "^5.0.0",
+    "@gold.au/grid-12": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.4.0",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.4.1",
+    "react": "^17.0.2"
+  },
+  "repository": "null//github.com/steelthreads/agds/tree/main/packages/core"
+}
