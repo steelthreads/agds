@@ -19,15 +19,14 @@ export const useLink = (): LinkFactoryType => {
 
 type AgdsProviderProps = {
   linkFactory?: LinkFactoryType;
-  PancakeCssImport?: any;
   // eslint-disable-next-line no-undef
   children: JSX.Element | JSX.Element[];
 };
 
-export const AgdsProvider = ({ linkFactory = Link, PancakeCssImport, children }: AgdsProviderProps) => {
+export const AgdsProvider = ({ linkFactory = Link, children }: AgdsProviderProps) => {
   return (
     <>
-      {PancakeCssImport ? <Global styles={PancakeCssImport} /> : null}
+      <Global styles={require('./__generated/pancake.min.css.js')} />
       <Context.Provider value={{ linkFactory }}>
         <div className={'au-body au-grid'}>{children}</div>
       </Context.Provider>
