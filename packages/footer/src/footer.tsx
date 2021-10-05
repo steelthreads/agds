@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLink } from '@ag.ds/core';
-import { Global } from '@emotion/react';
+import { Global, css } from '@emotion/react';
 
 const YEAR = new Date().getFullYear();
 
@@ -35,7 +35,12 @@ interface FooterProps {
 export const Footer = ({ children }: FooterProps) => {
   return (
     <>
-      <Global styles={require('./override.css')} />
+      <Global styles={css`
+        .au-footer.au-footer--dark {
+          border-color: #F36C52;
+          background-color: #162845
+        }
+      `} />
       <footer className="au-body au-body--dark au-footer au-footer--dark" role="contentinfo">
         <div className="container">
           {children ? (

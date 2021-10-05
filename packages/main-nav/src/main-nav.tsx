@@ -1,5 +1,5 @@
 import React from 'react';
-import { Global } from '@emotion/react';
+import { Global, css } from '@emotion/react';
 import { useLink } from '@ag.ds/core';
 import cx from 'classnames';
 
@@ -27,7 +27,40 @@ interface MainNavProps {
 export const MainNav = ({ dark = true, children }: MainNavProps) => {
   return (
     <>
-      <Global styles={require('./override.css')} />
+      <Global styles={css`
+        .au-main-nav.au-main-nav--dark {
+          background-color: #0A1931;
+          border-color: #F36C52;
+        }
+        
+        .au-main-nav.au-main-nav--dark .au-main-nav__menu {
+          background-color: #0A1931;
+        }
+
+        .au-main-nav.au-main-nav--dark a, .au-main-nav.au-main-nav--dark .au-main-nav__toggle {
+          color: #9EE8FF;
+        }
+
+        .au-main-nav.au-main-nav--dark a::-moz-focus-inner, .au-main-nav.au-main-nav--dark .au-main-nav__toggle::-moz-focus-inner {
+          border: 0
+        }
+
+        .au-main-nav.au-main-nav--dark a:hover, .au-main-nav.au-main-nav--dark .au-main-nav__toggle:hover {
+          background-color: #0A1931;
+        }
+
+        .au-main-nav.au-main-nav--dark .active a {
+          border-color: #0A1931;
+        }
+
+        .au-main-nav.au-main-nav--dark .active a:hover {
+          border-color: #0A1931;
+        }
+
+        .au-main-nav.au-main-nav--dark .au-link-list > li {
+          border-color: #89afb8
+        }
+      `} />
       <nav className={cx('au-main-nav', dark && 'au-main-nav--dark')} aria-label="main">
         <div className="container">
           <div className="row">

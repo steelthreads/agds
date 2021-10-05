@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "start-storybook -p 6006",
     "build": "build-storybook -o ../storybook-static"
   },
@@ -14,7 +15,10 @@
     "@storybook/react": "^6.3.8"
   },
   "dependencies": {
-    "@ag.ds/core": "0.0.3"
+    "@ag.ds/core": "0.0.3",
+    "@ag.ds/footer": "0.0.3",
+    "@ag.ds/header": "0.0.3",
+    "@ag.ds/main-nav": "0.0.3"
   },
-  "repository": "null//github.com/steelthreads/agds/tree/main/storybook"
+  "repository": "null//github.com/null/github.com/tree/main/storybook"
 }

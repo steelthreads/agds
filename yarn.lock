@@ -1530,7 +1530,7 @@
     "@gold.au/pancake-react" "~2.0.0"
     "@gold.au/pancake-sass" "~3.0.0"
 
-"@gold.au/grid-12@^5.0.0":
+"@gold.au/grid-12@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@gold.au/grid-12/-/grid-12-3.0.0.tgz#3c2f7b095dc48864b5793db3cd2d944880430cd0"
   integrity sha512-aSzbIEc8O6YzXRlxxKEmCsYDhfyYwtQ1Zi4huERBQFpmbYvhV3JP++Kin1neFUo33LBUHYfwWUyUvlunJVBHiQ==
