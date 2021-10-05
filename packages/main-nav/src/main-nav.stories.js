@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { MainNav } from '.';
-import { NavLink } from './main-nav';
+import { MainNavLink } from './main-nav';
 
 export default {
   title: 'AgDS/Main Nav',
@@ -9,9 +9,9 @@ export default {
 
 const Template = (args) => (
   <MainNav {...args}>
-    <NavLink href={'/intelligence'} title={'Intelligence'} active={true} />
-    <NavLink href={'/establishments'} title={'Establishments'} />
-    <NavLink href={'/profile'} title={'Profile'} />
+    <MainNavLink href={'/intelligence'} title={'Intelligence'} active={true} />
+    <MainNavLink href={'/establishments'} title={'Establishments'} />
+    <MainNavLink href={'/profile'} title={'Profile'} />
   </MainNav>
 );
 
