@@ -1,6 +1,6 @@
 {
   "name": "@ag.ds/headings",
-  "version": "0.0.6",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/ag.ds-headings.cjs.js",
   "module": "dist/ag.ds-headings.esm.js",
