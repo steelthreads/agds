@@ -3,7 +3,7 @@ import { useLink } from '@ag.ds/core';
 
 interface BreadcrumbsItemProps {
   href?: string;
-  children: string;
+  children: React.ReactNode;
 }
 
 export const BreadcrumbsItem = ({ href = null, children }: BreadcrumbsItemProps) => {
