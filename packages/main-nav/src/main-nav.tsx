@@ -19,11 +19,10 @@ export const MainNavLink = ({ href, title, active = false }: NavLinkProps) => {
 };
 
 interface MainNavProps {
-  dark?: boolean;
   children: React.ReactElement<typeof MainNavLink>[];
 }
 
-export const MainNav = ({ dark = true, children }: MainNavProps) => {
+export const MainNav = ({ children }: MainNavProps) => {
   return (
     <>
       <Global styles={css`
@@ -60,7 +59,7 @@ export const MainNav = ({ dark = true, children }: MainNavProps) => {
           border-color: #89afb8
         }
       `} />
-      <nav className={cx('au-main-nav', dark && 'au-main-nav--dark')} aria-label="main">
+      <nav className={'au-main-nav au-main-nav--dark'} aria-label="main">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
