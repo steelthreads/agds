@@ -29,7 +29,7 @@ export const FooterLink = ({ href, title }: FooterLinkItemProps) => {
 };
 
 interface FooterProps {
-  children?: React.ReactElement<typeof FooterLink>[];
+  children?: React.ReactElement<typeof FooterLink> | React.ReactElement<typeof FooterLink>[];
 }
 
 export const Footer = ({ children }: FooterProps) => {
