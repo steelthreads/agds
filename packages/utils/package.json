@@ -1,0 +1,17 @@
+{
+  "name": "@ag.ds/utils",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "dist/ag.ds-utils.cjs.js",
+  "module": "dist/ag.ds-utils.esm.js",
+  "dependencies": {
+    "@babel/runtime": "^7.15.4"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "react": "^17.0.2"
+  },
+  "repository": "https://github.com/steelthreads/agds/tree/main/packages/utils"
+}
