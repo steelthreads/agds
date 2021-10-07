@@ -18,11 +18,12 @@ interface TextProps {
     | 'code'
     | 'label';
   children: React.ReactNode | React.ReactNode[];
+  className?: string;
 }
 
 export const Text = forwardRefWithAs<'span', TextProps>(({ as: Tag = 'span', children, ...rest }: TextProps, ref) => {
   return (
-    <Tag ref={ref} {...rest}>
+    <Tag {...rest} ref={ref}>
       {children}
     </Tag>
   );

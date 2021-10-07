@@ -7,9 +7,8 @@ type StatusTypes = 'valid' | 'invalid';
 
 type InputProps = React.InputHTMLAttributes<HTMLInputElement>;
 
-interface TextInputProps {
+export type TextInputProps = {
   type?: TypeTypes;
-  name: string;
   id: string;
   value: string;
   block?: boolean;
@@ -17,10 +16,10 @@ interface TextInputProps {
   disabled?: boolean;
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   onChange: InputProps['onChange'];
-}
+};
 
 export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
-  ({ type = 'text', name, id, value, block, status, disabled, size, onChange, ...rest }: TextInputProps, ref) => {
+  ({ type = 'text', id, value, block, status, disabled, size, onChange, ...rest }: TextInputProps, ref) => {
     let statusClassname;
     if (status === 'valid') {
       statusClassname = 'au-text-input--valid';
@@ -32,7 +31,7 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
         {...rest}
         ref={ref}
         type={type}
-        name={name}
+        name={id}
         id={id}
         value={value}
         className={cx(
