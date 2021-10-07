@@ -8,7 +8,7 @@ interface HeadingProps {
   className?: string;
 }
 
-export const Heading = ({ as, size, children, className }: HeadingProps) => {
+export const Heading = ({ as, size, children, className, ...rest }: HeadingProps) => {
   const Tag = as;
-  return <Tag className={cx(`au-display-${ size }`, className)}>{children}</Tag>
+  return <Tag className={cx(`au-display-${ size }`, className)} {...rest}>{children}</Tag>
 }
