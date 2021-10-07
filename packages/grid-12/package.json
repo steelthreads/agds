@@ -1,6 +1,6 @@
 {
   "name": "@ag.ds/grid-12",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "license": "MIT",
   "main": "dist/ag.ds-grid-12.cjs.js",
   "module": "dist/ag.ds-grid-12.esm.js",
