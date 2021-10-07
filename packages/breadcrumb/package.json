@@ -1,6 +1,6 @@
 {
   "name": "@ag.ds/breadcrumb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "dist/ag.ds-breadcrumb.cjs.js",
   "module": "dist/ag.ds-breadcrumb.esm.js",

@@ -1,5 +1,11 @@
 # @ag.ds/footer
 
+## 0.0.9
+
+### Patch Changes
+
+- a13a741: Fix children props
+
 ## 0.0.8
 
 ### Patch Changes

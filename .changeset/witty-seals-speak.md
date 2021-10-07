@@ -11,4 +11,4 @@
 '@ag.ds/utils': patch
 ---
 
-Include @types/react-dom as a peerDep
+Add Field and Text Input packages
