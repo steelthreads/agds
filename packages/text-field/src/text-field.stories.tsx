@@ -9,7 +9,7 @@ export const Basic = () => {
   const [value, setValue] = useState('');
   return (
     <>
-      <TextField id={'basicexamplefield'} value={value} onChange={setValue} />
+      <TextField id={'basicexamplefield'} value={value} onChange={setValue} label={'First name'} />
       <p>Value: {value}</p>
     </>
   );

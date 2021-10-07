@@ -12,8 +12,8 @@ export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
   ({ id, label, onChange, invalidMsg, description, labelVisible, ...rest }: TextFieldProps, ref) => {
     return (
       <Field id={id} label={label} invalidMsg={invalidMsg} description={description} labelVisible={labelVisible}>
-        {({ fieldArgs }) => (
-          <TextInput ref={ref} {...rest} onChange={(e) => onChange(e.target.value)} {...fieldArgs} {...rest} />
+        {(fieldArgs) => (
+          <TextInput ref={ref} {...rest} {...fieldArgs} id={id} onChange={(e) => onChange(e.target.value)} />
         )}
       </Field>
     );
