@@ -17,5 +17,19 @@ export const Basic = () => (
     <br />
     <Text as={'sup'}>Sup</Text>
     <br />
+    <Text as={'mark'}>Mark</Text>
+    <br />
+    <Text as={'abbr'}>Abbr</Text>
+    <br />
+    <Text as={'var'}>Var</Text>
+    <br />
+    <Text as={'kbd'}>Kbd</Text>
+    <br />
+    <Text as={'ins'}>Ins</Text>
+    <br />
+    <Text as={'pre'}>Pre</Text>
+    <br />
+    <Text as={'code'}>Code</Text>
+    <br />
   </>
 )
