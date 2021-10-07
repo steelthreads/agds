@@ -15,12 +15,12 @@
     "@storybook/react": "^6.3.8"
   },
   "dependencies": {
-    "@ag.ds/breadcrumbs": "0.0.1",
+    "@ag.ds/breadcrumb": "0.0.1",
     "@ag.ds/core": "0.0.6",
     "@ag.ds/footer": "0.0.8",
     "@ag.ds/grid-12": "0.0.0",
     "@ag.ds/header": "0.0.7",
-    "@ag.ds/headings": "0.0.1",
+    "@ag.ds/heading": "0.0.1",
     "@ag.ds/main-nav": "0.0.8"
   },
   "repository": "https://github.com/steelthreads/agds/tree/main/storybook"

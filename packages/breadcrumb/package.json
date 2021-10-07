@@ -1,9 +1,9 @@
 {
-  "name": "@ag.ds/breadcrumbs",
+  "name": "@ag.ds/breadcrumb",
   "version": "0.0.1",
   "license": "MIT",
-  "main": "dist/ag.ds-breadcrumbs.cjs.js",
-  "module": "dist/ag.ds-breadcrumbs.esm.js",
+  "main": "dist/ag.ds-breadcrumb.cjs.js",
+  "module": "dist/ag.ds-breadcrumb.esm.js",
   "dependencies": {
     "@ag.ds/core": "0.0.6",
     "@babel/runtime": "^7.15.4",
@@ -19,5 +19,5 @@
     "@types/react-dom": "^17.0.9",
     "react": "^17.0.2"
   },
-  "repository": "https://github.com/steelthreads/agds/tree/main/packages/breadcrumbs"
+  "repository": "https://github.com/steelthreads/agds/tree/main/packages/breadcrumb"
 }

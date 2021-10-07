@@ -1,6 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
-import { forwardRefWithAs } from '@ag.ds/utils';
+import { forwardRefWithAs } from '@ag.ds/util';
 
 const mapAsToSizeDefault = {
   'h1': 'xxl',
