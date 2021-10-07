@@ -9,7 +9,7 @@ interface HeadingProps {
   className?: string;
 }
 
-export const Heading = forwardRefWithAs(({ as, size, children, className, ...rest }: HeadingProps, ref) => {
+export const Heading = forwardRefWithAs<'h1', HeadingProps>(({ as, size, children, className, ...rest }, ref) => {
   const Tag = as;
   return <Tag ref={ref} className={cx(`au-display-${ size }`, className)} {...rest}>{children}</Tag>
 })

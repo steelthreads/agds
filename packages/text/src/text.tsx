@@ -6,7 +6,7 @@ interface TextProps {
   children: React.ReactNode | React.ReactNode[];
 }
 
-export const Text = forwardRefWithAs(({ as = 'span', children, ...rest }: TextProps, ref) => {
+export const Text = forwardRefWithAs<'span', TextProps>(({ as = 'span', children, ...rest }, ref) => {
   const Tag = as;
   return <Tag ref={ref} {...rest}>{children}</Tag>
 })
