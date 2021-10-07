@@ -8,5 +8,9 @@ interface TextProps {
 
 export const Text = forwardRefWithAs<'span', TextProps>(({ as = 'span', children, ...rest }, ref) => {
   const Tag = as;
-  return <Tag ref={ref} {...rest}>{children}</Tag>
-})
+  return (
+    <Tag ref={ref} {...rest}>
+      {children}
+    </Tag>
+  );
+});

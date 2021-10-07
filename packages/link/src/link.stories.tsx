@@ -7,4 +7,8 @@ export default {
 
 export const Basic = () => <Link href="#">Hash link</Link>;
 
-export const WithTextAndIcon = () => <Link href="#">Hash link<span>Icon</span></Link>;
+export const WithTextAndIcon = () => (
+  <Link href="#">
+    Hash link<span>Icon</span>
+  </Link>
+);

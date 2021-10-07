@@ -11,10 +11,12 @@ export const Basic = () => (
     <BreadcrumbItem href={'/profile'}>Profile</BreadcrumbItem>
     <BreadcrumbItem>My Preferences</BreadcrumbItem>
   </Breadcrumb>
-)
+);
 
 export const WithIcon = () => (
   <Breadcrumb>
-    <BreadcrumbItem>My Preferences <span>icon</span></BreadcrumbItem>
+    <BreadcrumbItem>
+      My Preferences <span>icon</span>
+    </BreadcrumbItem>
   </Breadcrumb>
-)
+);

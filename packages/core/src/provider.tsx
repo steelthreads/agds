@@ -21,7 +21,7 @@ export const useLink = (): LinkFactoryType => {
 interface AgdsProviderProps {
   linkFactory?: LinkFactoryType;
   children: React.ReactNode;
-};
+}
 
 export const AgdsProvider = ({ linkFactory = Link, children }: AgdsProviderProps) => {
   return (
@@ -32,4 +32,4 @@ export const AgdsProvider = ({ linkFactory = Link, children }: AgdsProviderProps
       </Context.Provider>
     </>
   );
-}
+};

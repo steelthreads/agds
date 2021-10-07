@@ -32,4 +32,4 @@ export const Basic = () => (
     <Text as={'code'}>Code</Text>
     <br />
   </>
-)
+);

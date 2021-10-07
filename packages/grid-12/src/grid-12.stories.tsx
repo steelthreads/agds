@@ -7,7 +7,9 @@ export default {
 };
 
 const Style = () => (
-  <div dangerouslySetInnerHTML={{ __html: `
+  <div
+    dangerouslySetInnerHTML={{
+      __html: `
       <style>
         .grids {
           padding-top: 10px;
@@ -17,7 +19,9 @@ const Style = () => (
           border: 1px solid black;
         }
       </style>
-    `}} />
+    `,
+    }}
+  />
 );
 
 export const Fixed = () => (
@@ -79,7 +83,7 @@ export const Fixed = () => (
       </Row>
     </Container>
   </>
-)
+);
 
 export const Fluid = () => (
   <>
@@ -92,4 +96,4 @@ export const Fluid = () => (
       </Row>
     </Container>
   </>
-)
+);

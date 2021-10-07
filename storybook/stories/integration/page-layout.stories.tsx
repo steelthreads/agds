@@ -20,7 +20,9 @@ export const Basic = () => (
       <Row>
         <Column className={'col-xs-12'}>
           <div style={{ height: 300 }}>
-            <Heading as={'h1'} size={'xxl'}>Heading 1</Heading>
+            <Heading as={'h1'} size={'xxl'}>
+              Heading 1
+            </Heading>
           </div>
         </Column>
       </Row>

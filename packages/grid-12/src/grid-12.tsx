@@ -7,15 +7,13 @@ interface ContainerProps {
 
 export const Container = ({ children, fluid = false }: ContainerProps) => (
   <div className={fluid ? 'container-fluid' : 'container'}>{children}</div>
-)
+);
 
 interface RowProps {
   children: React.ReactElement<typeof Column> | React.ReactElement<typeof Column>[];
 }
 
-export const Row = ({ children }: RowProps) => (
-  <div className="row">{children}</div>
-)
+export const Row = ({ children }: RowProps) => <div className="row">{children}</div>;
 
 interface ColumnProps {
   className: string;
@@ -23,7 +21,5 @@ interface ColumnProps {
 }
 
 export const Column = ({ children, className }: ColumnProps) => {
-  return (
-    <div className={className}>{children}</div>
-  );
-}
+  return <div className={className}>{children}</div>;
+};

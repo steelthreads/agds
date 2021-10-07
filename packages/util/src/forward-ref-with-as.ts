@@ -1,19 +1,9 @@
-import React, {
-  ComponentPropsWithoutRef,
-  ElementType,
-  ReactElement,
-  ReactNode,
-  Ref,
-  forwardRef,
-} from 'react';
+import React, { ComponentPropsWithoutRef, ElementType, ReactElement, ReactNode, Ref, forwardRef } from 'react';
 
 /* eslint-disable no-unused-vars, no-undef */
 
 type ElementTagNameMap = HTMLElementTagNameMap &
-  Pick<
-    SVGElementTagNameMap,
-    Exclude<keyof SVGElementTagNameMap, keyof HTMLElementTagNameMap>
-  >;
+  Pick<SVGElementTagNameMap, Exclude<keyof SVGElementTagNameMap, keyof HTMLElementTagNameMap>>;
 
 type AsProp<Comp extends ElementType> = {
   as?: Comp;
@@ -26,20 +16,12 @@ type AsProp<Comp extends ElementType> = {
   >;
 } & Omit<ComponentPropsWithoutRef<Comp>, 'as'>;
 
-type CompWithAsProp<Props, DefaultElementType extends ElementType> = <
-  Comp extends ElementType = DefaultElementType
->(
+type CompWithAsProp<Props, DefaultElementType extends ElementType> = <Comp extends ElementType = DefaultElementType>(
   props: AsProp<Comp> & Props
 ) => ReactElement;
 
-export const forwardRefWithAs = <
-  DefaultElementType extends ElementType,
-  BaseProps
->(
-  render: (
-    props: BaseProps & { as?: ElementType },
-    ref: React.Ref<any>
-  ) => Exclude<ReactNode, undefined>
+export const forwardRefWithAs = <DefaultElementType extends ElementType, BaseProps>(
+  render: (props: BaseProps & { as?: ElementType }, ref: React.Ref<any>) => Exclude<ReactNode, undefined>
 ): CompWithAsProp<BaseProps, DefaultElementType> => {
   // @ts-ignore
   return forwardRef(render);

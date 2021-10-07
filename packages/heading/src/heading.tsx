@@ -3,13 +3,13 @@ import cx from 'classnames';
 import { forwardRefWithAs } from '@ag.ds/util';
 
 const mapAsToSizeDefault = {
-  'h1': 'xxl',
-  'h2': 'xl',
-  'h3': 'lg',
-  'h4': 'md',
-  'h5': 'sm',
-  'h6': 'xs',
-}
+  h1: 'xxl',
+  h2: 'xl',
+  h3: 'lg',
+  h4: 'md',
+  h5: 'sm',
+  h6: 'xs',
+};
 
 interface HeadingProps {
   as: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
@@ -25,5 +25,9 @@ export const Heading = forwardRefWithAs<'h1', HeadingProps>(({ as, size, childre
     size = mapAsToSizeDefault[as];
   }
 
-  return <Tag ref={ref} className={cx(`au-display-${ size }`, className)} {...rest}>{children}</Tag>
-})
+  return (
+    <Tag ref={ref} className={cx(`au-display-${size}`, className)} {...rest}>
+      {children}
+    </Tag>
+  );
+});

@@ -1,3 +1,1 @@
-export {
- Container, Row, Column,
-} from './grid-12';
+export { Container, Row, Column } from './grid-12';
