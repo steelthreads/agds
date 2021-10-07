@@ -2,4 +2,4 @@
 '@ag.ds/button': patch
 ---
 
-Add buttons package
+Add Button package
