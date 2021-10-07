@@ -18,10 +18,9 @@ export const useLink = (): LinkFactoryType => {
   return useContext(Context).linkFactory;
 };
 
-type AgdsProviderProps = {
+interface AgdsProviderProps {
   linkFactory?: LinkFactoryType;
-  // eslint-disable-next-line no-undef
-  children: JSX.Element | JSX.Element[];
+  children: React.ReactNode;
 };
 
 export const AgdsProvider = ({ linkFactory = Link, children }: AgdsProviderProps) => {

@@ -1,16 +1,16 @@
 {
-  "name": "@ag.ds/grid-12",
+  "name": "@ag.ds/text",
   "version": "0.0.0",
   "license": "MIT",
-  "main": "dist/ag.ds-grid-12.cjs.js",
-  "module": "dist/ag.ds-grid-12.esm.js",
+  "main": "dist/ag.ds-text.cjs.js",
+  "module": "dist/ag.ds-text.esm.js",
   "dependencies": {
+    "@ag.ds/util": "0.0.0",
     "@babel/runtime": "^7.15.4",
-    "@gold.au/grid-12": "^3.0.0",
-    "classnames": "^2.3.1"
+    "@gov.au/body": "^2.2.1"
   },
   "peerDependencies": {
-    "@emotion/react": "^11.4.0",
+    "@emotion/react": "^11.4.1",
     "react": "^17.0.2"
   },
   "devDependencies": {
@@ -19,5 +19,5 @@
     "@types/react-dom": "^17.0.9",
     "react": "^17.0.2"
   },
-  "repository": "https://github.com/steelthreads/agds/tree/main/packages/grid-12"
+  "repository": "https://github.com/steelthreads/agds/tree/main/packages/text"
 }

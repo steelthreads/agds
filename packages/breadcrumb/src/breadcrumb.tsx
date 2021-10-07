@@ -1,12 +1,12 @@
 import React from 'react';
 import { useLink } from '@ag.ds/core';
 
-interface BreadcrumbsItemProps {
+interface BreadcrumbItemProps {
   href?: string;
   children: React.ReactNode;
 }
 
-export const BreadcrumbsItem = ({ href = null, children }: BreadcrumbsItemProps) => {
+export const BreadcrumbItem = ({ href, children }: BreadcrumbItemProps) => {
   const Link = useLink();
 
   if (!href) {
@@ -16,11 +16,11 @@ export const BreadcrumbsItem = ({ href = null, children }: BreadcrumbsItemProps)
   return <li><Link href={href}>{children}</Link></li>;
 }
 
-interface BreadcrumbsProps {
-  children: React.ReactElement<typeof BreadcrumbsItem>[];
+interface BreadcrumbProps {
+  children: React.ReactElement<typeof BreadcrumbItem> | React.ReactElement<typeof BreadcrumbItem>[];
 }
 
-export const Breadcrumbs = ({ children }: BreadcrumbsProps) => {
+export const Breadcrumb = ({ children }: BreadcrumbProps) => {
   return (
     <nav className="au-breadcrumbs" aria-label="breadcrumb">
       <ul className="au-link-list au-link-list--inline">
