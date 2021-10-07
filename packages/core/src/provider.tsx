@@ -20,10 +20,11 @@ export const useLink = (): LinkFactoryType => {
 
 type AgdsProviderProps = {
   linkFactory?: LinkFactoryType;
+  // eslint-disable-next-line no-undef
   children: JSX.Element | JSX.Element[];
 };
 
-export const AgdsProvider: React.FC<AgdsProviderProps> = ({ linkFactory = Link, children }) => {
+export const AgdsProvider = ({ linkFactory = Link, children }: AgdsProviderProps) => {
   return (
     <>
       <PancakeCss />
