@@ -1,6 +1,6 @@
 {
   "name": "@ag.ds/footer",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "license": "MIT",
   "main": "dist/ag.ds-footer.cjs.js",
   "module": "dist/ag.ds-footer.esm.js",
