@@ -2,7 +2,7 @@ import React from 'react';
 import { Breadcrumb, BreadcrumbItem } from '.';
 
 export default {
-  title: 'AgDS/Breadcrumbs',
+  title: 'AgDS/Breadcrumb',
 };
 
 export const Basic = () => (

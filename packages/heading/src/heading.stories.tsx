@@ -2,7 +2,7 @@ import React from 'react';
 import { Heading } from '.';
 
 export default {
-  title: 'AgDS/Headings',
+  title: 'AgDS/Heading',
 };
 
 export const Basic = () => (
