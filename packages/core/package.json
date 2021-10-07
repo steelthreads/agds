@@ -7,8 +7,7 @@
   "dependencies": {
     "@babel/runtime": "^7.15.4",
     "@gold.au/core": "^5.0.0",
-    "@gold.au/grid-12": "^3.0.0",
-    "@types/react": "^17.0.27"
+    "@gold.au/grid-12": "^3.0.0"
   },
   "peerDependencies": {
     "@emotion/react": "^11.4.0",
@@ -16,6 +15,7 @@
   },
   "devDependencies": {
     "@emotion/react": "^11.4.1",
+    "@types/react": "^17.0.27",
     "react": "^17.0.2"
   },
   "repository": "https://github.com/steelthreads/agds/tree/main/packages/core"
