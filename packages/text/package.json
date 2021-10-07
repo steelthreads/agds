@@ -5,8 +5,8 @@
   "main": "dist/ag.ds-text.cjs.js",
   "module": "dist/ag.ds-text.esm.js",
   "dependencies": {
-    "@ag.ds/utils": "0.0.0",
     "@ag.ds/core": "0.0.6",
+    "@ag.ds/utils": "0.0.0",
     "@babel/runtime": "^7.15.4",
     "@gov.au/body": "^2.2.1"
   },
