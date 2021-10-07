@@ -16,6 +16,8 @@
   },
   "devDependencies": {
     "@emotion/react": "^11.4.1",
+    "@types/react": "^17.0.27",
+    "@types/react-dom": "^17.0.9",
     "react": "^17.0.2"
   },
   "repository": "https://github.com/steelthreads/agds/tree/main/packages/main-nav"

@@ -3,6 +3,7 @@ import { Header } from '@ag.ds/header';
 import { MainNav, MainNavLink } from '@ag.ds/main-nav';
 import { Footer, FooterLink } from '@ag.ds/footer';
 import { Column, Container, Row } from '@ag.ds/grid-12';
+import { Heading } from '@ag.ds/headings';
 
 export default {
   title: 'Integration/Page Layout',
@@ -18,7 +19,9 @@ export const Basic = () => (
     <Container>
       <Row>
         <Column className={'col-xs-12'}>
-          <div style={{ height: 300 }} />
+          <div style={{ height: 300 }}>
+            <Heading as={'h1'} size={'xxl'}>Heading 1</Heading>
+          </div>
         </Column>
       </Row>
     </Container>

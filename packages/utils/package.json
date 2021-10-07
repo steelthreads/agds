@@ -11,6 +11,7 @@
     "react": "^17.0.2"
   },
   "devDependencies": {
+    "@types/react": "^17.0.27",
     "react": "^17.0.2"
   },
   "repository": "https://github.com/steelthreads/agds/tree/main/packages/utils"

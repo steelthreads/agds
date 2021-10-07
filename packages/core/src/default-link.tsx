@@ -1,11 +1,12 @@
 import React from 'react';
 
-export type LinkProps = {
+export interface LinkProps {
   href: string;
-  children: any; // TODO
+  children: React.ReactNode;
   [key: string]: any;
 };
 
+// eslint-disable-next-line react/display-name
 export const Link = ({ href, children, ...rest }: LinkProps) => {
   return <a href={href} {...rest}>{children}</a>
-}
+};

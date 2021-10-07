@@ -6,7 +6,7 @@ interface BreadcrumbsItemProps {
   children: React.ReactNode;
 }
 
-export const BreadcrumbsItem = ({ href = null, children }: BreadcrumbsItemProps) => {
+export const BreadcrumbsItem = ({ href, children }: BreadcrumbsItemProps) => {
   const Link = useLink();
 
   if (!href) {
@@ -17,7 +17,7 @@ export const BreadcrumbsItem = ({ href = null, children }: BreadcrumbsItemProps)
 }
 
 interface BreadcrumbsProps {
-  children: React.ReactElement<typeof BreadcrumbsItem>[];
+  children: React.ReactElement<typeof BreadcrumbsItem> | React.ReactElement<typeof BreadcrumbsItem>[];
 }
 
 export const Breadcrumbs = ({ children }: BreadcrumbsProps) => {

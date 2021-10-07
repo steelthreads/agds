@@ -9,6 +9,12 @@ export const Basic = () => (
   <Breadcrumbs>
     <BreadcrumbsItem href={'/'}>Home</BreadcrumbsItem>
     <BreadcrumbsItem href={'/profile'}>Profile</BreadcrumbsItem>
-    <BreadcrumbsItem >My Preferences</BreadcrumbsItem>
+    <BreadcrumbsItem>My Preferences</BreadcrumbsItem>
+  </Breadcrumbs>
+)
+
+export const WithIcon = () => (
+  <Breadcrumbs>
+    <BreadcrumbsItem>My Preferences <span>icon</span></BreadcrumbsItem>
   </Breadcrumbs>
 )

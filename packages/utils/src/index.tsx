@@ -1,1 +1,1 @@
-export { forwardRefWithAs } from './forward-ref-with-as';
+export * from './forward-ref-with-as';

@@ -7,12 +7,12 @@ export default {
 
 export const Basic = () => (
   <>
-    <Heading as="h1" size="xxxl">Heading 1</Heading>
-    <Heading as="h2" size="xxl">Heading 2</Heading>
-    <Heading as="h3" size="xl">Heading 3</Heading>
-    <Heading as="h4" size="lg">Heading 4</Heading>
-    <Heading as="h5" size="md">Heading 5</Heading>
-    <Heading as="h6" size="sm">Heading 6</Heading>
+    <Heading as="h1">Heading 1</Heading>
+    <Heading as="h2">Heading 2</Heading>
+    <Heading as="h3">Heading 3</Heading>
+    <Heading as="h4">Heading 4</Heading>
+    <Heading as="h5">Heading 5</Heading>
+    <Heading as="h6">Heading 6</Heading>
   </>
 );
 
