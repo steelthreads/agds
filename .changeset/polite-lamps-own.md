@@ -1,5 +1,5 @@
 ---
-'@ag.ds/headings': patch
+'@ag.ds/heading': patch
 ---
 
 Spread props to headings

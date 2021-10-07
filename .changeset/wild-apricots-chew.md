@@ -1,5 +1,5 @@
 ---
-'@ag.ds/utils': patch
+'@ag.ds/util': patch
 ---
 
 * Add Utils package
