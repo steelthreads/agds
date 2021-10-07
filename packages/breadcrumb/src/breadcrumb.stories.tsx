@@ -1,20 +1,20 @@
 import React from 'react';
-import { Breadcrumbs, BreadcrumbsItem } from '.';
+import { Breadcrumb, BreadcrumbItem } from '.';
 
 export default {
   title: 'AgDS/Breadcrumbs',
 };
 
 export const Basic = () => (
-  <Breadcrumbs>
-    <BreadcrumbsItem href={'/'}>Home</BreadcrumbsItem>
-    <BreadcrumbsItem href={'/profile'}>Profile</BreadcrumbsItem>
-    <BreadcrumbsItem>My Preferences</BreadcrumbsItem>
-  </Breadcrumbs>
+  <Breadcrumb>
+    <BreadcrumbItem href={'/'}>Home</BreadcrumbItem>
+    <BreadcrumbItem href={'/profile'}>Profile</BreadcrumbItem>
+    <BreadcrumbItem>My Preferences</BreadcrumbItem>
+  </Breadcrumb>
 )
 
 export const WithIcon = () => (
-  <Breadcrumbs>
-    <BreadcrumbsItem>My Preferences <span>icon</span></BreadcrumbsItem>
-  </Breadcrumbs>
+  <Breadcrumb>
+    <BreadcrumbItem>My Preferences <span>icon</span></BreadcrumbItem>
+  </Breadcrumb>
 )

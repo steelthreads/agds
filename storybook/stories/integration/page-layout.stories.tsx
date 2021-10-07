@@ -3,7 +3,7 @@ import { Header } from '@ag.ds/header';
 import { MainNav, MainNavLink } from '@ag.ds/main-nav';
 import { Footer, FooterLink } from '@ag.ds/footer';
 import { Column, Container, Row } from '@ag.ds/grid-12';
-import { Heading } from '@ag.ds/headings';
+import { Heading } from '@ag.ds/heading';
 
 export default {
   title: 'Integration/Page Layout',
