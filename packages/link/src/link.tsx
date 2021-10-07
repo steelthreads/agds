@@ -6,9 +6,14 @@ interface LinkProps {
   children: React.ReactNode;
 }
 
-// eslint-disable-next-line react/display-name,react/prop-types
-export const Link = forwardRef<any, LinkProps>(({ href, children, ...rest }, ref) => {
+export const Link = forwardRef<any, LinkProps>(({ href, children, ...rest }: LinkProps, ref) => {
   const _Link = useLink();
   // @ts-ignore
-  return <_Link ref={ref} href={href} {...rest}>{children}</_Link>;
-})
+  return (
+    <_Link ref={ref} href={href} {...rest}>
+      {children}
+    </_Link>
+  );
+});
+
+Link.displayName = 'Link';

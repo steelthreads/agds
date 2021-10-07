@@ -9,12 +9,15 @@ const DEST_FILE = path.join(__dirname, '../../../packages/core/src/__generated__
 try {
   const css = readFileSync(SOURCE_FILE, 'utf8');
 
-  const output = `/* This file is generated - DO NOT EDIT */
+  const output =
+    `/* This file is generated - DO NOT EDIT */
 import { Global } from '@emotion/react';
 import React from 'react';
 
 const PancakeCss = () => (
-  <Global styles={\`` + css + `\`} />
+  <Global styles={\`` +
+    css +
+    `\`} />
 )
 
 export default PancakeCss;
@@ -24,5 +27,3 @@ export default PancakeCss;
 } catch (error) {
   console.error('Could not create pancake-css.js', { error });
 }
-
-

@@ -35,12 +35,14 @@ interface FooterProps {
 export const Footer = ({ children }: FooterProps) => {
   return (
     <>
-      <Global styles={css`
-        .au-footer.au-footer--dark {
-          border-color: #F36C52;
-          background-color: #162845
-        }
-      `} />
+      <Global
+        styles={css`
+          .au-footer.au-footer--dark {
+            border-color: #f36c52;
+            background-color: #162845;
+          }
+        `}
+      />
       <footer className="au-body au-body--dark au-footer au-footer--dark" role="contentinfo">
         <div className="container">
           {children ? (
@@ -53,10 +55,13 @@ export const Footer = ({ children }: FooterProps) => {
           <div className="row">
             <div className="col-sm-12">
               <div className="au-footer__end">
-                <p style={{ marginBottom: '1em' }}>&copy; {YEAR} Department of Agriculture, Water and the Environment</p>
+                <p style={{ marginBottom: '1em' }}>
+                  &copy; {YEAR} Department of Agriculture, Water and the Environment
+                </p>
                 <p>
                   We acknowledge the traditional owners of country throughout Australia and recognise their continuing
-                  connection to land, waters and culture. We pay our respects to their Elders past, present and emerging.
+                  connection to land, waters and culture. We pay our respects to their Elders past, present and
+                  emerging.
                 </p>
               </div>
             </div>
@@ -64,6 +69,5 @@ export const Footer = ({ children }: FooterProps) => {
         </div>
       </footer>
     </>
-
   );
 };

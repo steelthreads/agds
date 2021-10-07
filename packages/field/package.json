@@ -1,0 +1,27 @@
+{
+  "name": "@ag.ds/field",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "dist/ag.ds-field.cjs.js",
+  "module": "dist/ag.ds-field.esm.js",
+  "dependencies": {
+    "@ag.ds/a11y": "0.0.0",
+    "@ag.ds/core": "0.0.6",
+    "@ag.ds/text": "0.0.0",
+    "@ag.ds/util": "0.0.0",
+    "@babel/runtime": "^7.15.4",
+    "@gold.au/text-inputs": "^3.0.0",
+    "classnames": "^2.3.1"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.4.0",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.4.1",
+    "@types/react": "^17.0.27",
+    "@types/react-dom": "^17.0.9",
+    "react": "^17.0.2"
+  },
+  "repository": "https://github.com/steelthreads/agds/tree/main/packages/field"
+}

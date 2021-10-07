@@ -3,23 +3,16 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    node: true
+    node: true,
   },
-  plugins: [
-    'prettier',
-    'react',
-    '@emotion'
-  ],
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'prettier'
-  ],
+  plugins: ['prettier', 'react', '@emotion'],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
   settings: {
     react: {
-      version: 'detect'
-    }
+      version: 'detect',
+    },
   },
   rules: {
+    'prettier/prettier': 'error',
   },
-}
+};

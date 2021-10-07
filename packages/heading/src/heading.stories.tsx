@@ -18,12 +18,26 @@ export const Basic = () => (
 
 export const Display = () => (
   <>
-    <Heading size="xxxl" as="h4">h4 + Display xxxl</Heading>
-    <Heading size="xxl" as="h6">h6 + Display xxl</Heading>
-    <Heading size="xl" as="h4">h4 + Display xl</Heading>
-    <Heading size="lg" as="h5">h5 + Display lg</Heading>
-    <Heading size="md" as="h2">h2 + Display md</Heading>
-    <Heading size="sm" as="h3">h3 + Display sm</Heading>
-    <Heading size="xs" as="h1">h1 + Display xs</Heading>
+    <Heading size="xxxl" as="h4">
+      h4 + Display xxxl
+    </Heading>
+    <Heading size="xxl" as="h6">
+      h6 + Display xxl
+    </Heading>
+    <Heading size="xl" as="h4">
+      h4 + Display xl
+    </Heading>
+    <Heading size="lg" as="h5">
+      h5 + Display lg
+    </Heading>
+    <Heading size="md" as="h2">
+      h2 + Display md
+    </Heading>
+    <Heading size="sm" as="h3">
+      h3 + Display sm
+    </Heading>
+    <Heading size="xs" as="h1">
+      h1 + Display xs
+    </Heading>
   </>
 );

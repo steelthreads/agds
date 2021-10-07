@@ -2,14 +2,14 @@ import React, { forwardRef } from 'react';
 import cx from 'classnames';
 
 const mapColorSchemeToClassname = {
-  'light': '',
-  'dark': 'au-btn--dark',
+  light: '',
+  dark: 'au-btn--dark',
 };
 
 const mapVariantToClassname = {
-  'primary': '',
-  'secondary': 'au-btn--secondary',
-  'tertiary': 'au-btn--tertiary',
+  primary: '',
+  secondary: 'au-btn--secondary',
+  tertiary: 'au-btn--tertiary',
 };
 
 interface ButtonProps {
@@ -22,11 +22,25 @@ interface ButtonProps {
 }
 
 // eslint-disable-next-line react/display-name
-export const Button = forwardRef<HTMLButtonElement, ButtonProps>(({ children, colorScheme = 'light', variant = 'primary', disabled = false, onClick, block = false }: ButtonProps, ref) => {
-  return (
-    <button ref={ref} className={cx('au-btn', mapColorSchemeToClassname[colorScheme], mapVariantToClassname[variant], block && 'au-btn--block')}
-            disabled={disabled} onClick={disabled ? () => null : onClick}>
-      {children}
-    </button>
-  );
-});
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  (
+    { children, colorScheme = 'light', variant = 'primary', disabled = false, onClick, block = false }: ButtonProps,
+    ref
+  ) => {
+    return (
+      <button
+        ref={ref}
+        className={cx(
+          'au-btn',
+          mapColorSchemeToClassname[colorScheme],
+          mapVariantToClassname[variant],
+          block && 'au-btn--block'
+        )}
+        disabled={disabled}
+        onClick={disabled ? () => null : onClick}
+      >
+        {children}
+      </button>
+    );
+  }
+);
