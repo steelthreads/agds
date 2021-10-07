@@ -1,0 +1,22 @@
+{
+  "name": "@ag.ds/a11y",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "dist/ag.ds-a11y.cjs.js",
+  "module": "dist/ag.ds-a11y.esm.js",
+  "dependencies": {
+    "@ag.ds/util": "0.0.0",
+    "@babel/runtime": "^7.15.4"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.4.0",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.4.1",
+    "@types/react": "^17.0.27",
+    "@types/react-dom": "^17.0.9",
+    "react": "^17.0.2"
+  },
+  "repository": "https://github.com/steelthreads/agds/tree/main/packages/a11y"
+}
