@@ -9,10 +9,12 @@ type TextFieldProps = FieldProps &
   };
 
 export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
-  ({ id, label, onChange, ...rest }: TextFieldProps, ref) => {
+  ({ id, label, onChange, invalidMsg, description, labelVisible, ...rest }: TextFieldProps, ref) => {
     return (
-      <Field id={id} label={label}>
-        {({ fieldArgs }) => <TextInput ref={ref} {...rest} onChange={(e) => onChange(e.target.value)} {...fieldArgs} />}
+      <Field id={id} label={label} invalidMsg={invalidMsg} description={description} labelVisible={labelVisible}>
+        {({ fieldArgs }) => (
+          <TextInput ref={ref} {...rest} onChange={(e) => onChange(e.target.value)} {...fieldArgs} {...rest} />
+        )}
       </Field>
     );
   }
