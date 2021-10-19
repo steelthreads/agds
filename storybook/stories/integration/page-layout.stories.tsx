@@ -32,7 +32,7 @@ export const Basic = () => (
       <FooterLink href={'https://www.awe.gov.au/about/commitment/accessibility'} title={'Accessibility'} />
       <FooterLink href={'https://www.awe.gov.au/disclaimer'} title={'Disclaimer'} />
       <FooterLink href={'https://www.awe.gov.au/about/commitment/privacy'} title={'Privacy'} />
-      <FooterLink href={'https://gold.designsystemau.org'} title={'Copyright'} />
+      <FooterLink href={'https://www.awe.gov.au/about/copyright'} title={'Copyright'} />
     </Footer>
   </>
 );
