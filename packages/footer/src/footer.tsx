@@ -43,6 +43,9 @@ export const Footer = ({ children }: FooterProps) => {
               border-color: #f36c52;
               background-color: #162845;
             }
+            .au-footer li {
+              margin-right: 1em;
+            }
           `}
         />
       )}
