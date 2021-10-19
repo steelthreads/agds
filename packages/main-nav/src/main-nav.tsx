@@ -23,47 +23,50 @@ interface MainNavProps {
 }
 
 export const MainNav = ({ children }: MainNavProps) => {
+  const dark = true;
   return (
-    <>
-      <Global
-        styles={css`
-          .au-main-nav.au-main-nav--dark {
-            background-color: #0a1931;
-            border-color: #f36c52;
-          }
+    <React.Fragment>
+      {dark && (
+        <Global
+          styles={css`
+            .au-main-nav.au-main-nav--dark {
+              background-color: #0a1931;
+              border-color: #f36c52;
+            }
 
-          .au-main-nav.au-main-nav--dark .au-main-nav__menu {
-            background-color: #0a1931;
-          }
+            .au-main-nav.au-main-nav--dark .au-main-nav__menu {
+              background-color: #0a1931;
+            }
 
-          .au-main-nav.au-main-nav--dark a,
-          .au-main-nav.au-main-nav--dark .au-main-nav__toggle {
-            color: #9ee8ff;
-          }
+            .au-main-nav.au-main-nav--dark a,
+            .au-main-nav.au-main-nav--dark .au-main-nav__toggle {
+              color: #9ee8ff;
+            }
 
-          .au-main-nav.au-main-nav--dark a::-moz-focus-inner,
-          .au-main-nav.au-main-nav--dark .au-main-nav__toggle::-moz-focus-inner {
-            border: 0;
-          }
+            .au-main-nav.au-main-nav--dark a::-moz-focus-inner,
+            .au-main-nav.au-main-nav--dark .au-main-nav__toggle::-moz-focus-inner {
+              border: 0;
+            }
 
-          .au-main-nav.au-main-nav--dark a:hover,
-          .au-main-nav.au-main-nav--dark .au-main-nav__toggle:hover {
-            background-color: #0a1931;
-          }
+            .au-main-nav.au-main-nav--dark a:hover,
+            .au-main-nav.au-main-nav--dark .au-main-nav__toggle:hover {
+              background-color: #0a1931;
+            }
 
-          .au-main-nav.au-main-nav--dark .active a {
-            border-color: #0a1931;
-          }
+            .au-main-nav.au-main-nav--dark .active a {
+              border-color: #0a1931;
+            }
 
-          .au-main-nav.au-main-nav--dark .active a:hover {
-            border-color: #0a1931;
-          }
+            .au-main-nav.au-main-nav--dark .active a:hover {
+              border-color: #0a1931;
+            }
 
-          .au-main-nav.au-main-nav--dark .au-link-list > li {
-            border-color: #89afb8;
-          }
-        `}
-      />
+            .au-main-nav.au-main-nav--dark .au-link-list > li {
+              border-color: #89afb8;
+            }
+          `}
+        />
+      )}
       <nav className={'au-main-nav au-main-nav--dark'} aria-label="main">
         <div className="container">
           <div className="row">
@@ -79,7 +82,7 @@ export const MainNav = ({ children }: MainNavProps) => {
                 </button>
                 <div className="au-main-nav__menu">
                   <div className="au-main-nav__menu-inner">
-                    <div className="au-main-nav__focus-trap-top"></div>
+                    <div className="au-main-nav__focus-trap-top"/>
                     <button
                       aria-controls="main-nav-default"
                       className="au-main-nav__toggle au-main-nav__toggle--close"
@@ -88,19 +91,19 @@ export const MainNav = ({ children }: MainNavProps) => {
                       Close
                     </button>
                     <ul className="au-link-list">{children}</ul>
-                    <div className="au-main-nav__focus-trap-bottom"></div>
+                    <div className="au-main-nav__focus-trap-bottom"/>
                   </div>
                 </div>
                 <div
                   className="au-main-nav__overlay"
                   aria-controls="main-nav-default"
                   // onClick="return AU.mainNav.Toggle( this )"
-                ></div>
+                />
               </div>
             </div>
           </div>
         </div>
       </nav>
-    </>
+    </React.Fragment>
   );
 };

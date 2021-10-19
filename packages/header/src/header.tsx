@@ -1,5 +1,8 @@
+/** @jsxRuntime classic */
+/** @jsx jsx */
+
 import React from 'react';
-import { Global } from '@emotion/react';
+import { css, Global, jsx } from '@emotion/react';
 import { useLink } from '@ag.ds/core';
 
 const Base64DaweLogo =
@@ -21,15 +24,18 @@ export const Header = ({
   href = '/',
 }: HeaderProps) => {
   const Link = useLink();
+  const dark = true;
   return (
-    <>
-      <Global
-        styles={`
-        .au-header.au-header--dark {
-          background-color: #162845;
-        }
-      `}
-      />
+    <React.Fragment>
+      {dark && (
+        <Global
+          styles={css`
+            .au-header.au-header--dark {
+              background-color: #162845;
+            }
+          `}
+        />
+      )}
       <header className="au-header au-header--dark" role="banner">
         <div className="container">
           <div className="row">
@@ -45,6 +51,6 @@ export const Header = ({
           </div>
         </div>
       </header>
-    </>
+    </React.Fragment>
   );
 };

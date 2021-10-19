@@ -1,4 +1,7 @@
-import { CSSObject } from '@emotion/react';
+/** @jsxRuntime classic */
+/** @jsx jsx */
+
+import { jsx, CSSObject } from '@emotion/react';
 import React from 'react';
 
 type ContainerProps = {

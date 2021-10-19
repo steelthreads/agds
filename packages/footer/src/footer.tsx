@@ -31,20 +31,32 @@ interface FooterProps {
 }
 
 export const Footer = ({ children }: FooterProps) => {
-
   const year = useMemo(() => new Date().getFullYear(), []);
+  const dark = true;
 
   return (
-    <>
-      <Global
-        styles={css`
-          .au-footer.au-footer--dark {
-            border-color: #f36c52;
-            background-color: #162845;
-          }
-        `}
-      />
-      <footer className="au-body au-body--dark au-footer au-footer--dark" role="contentinfo">
+    <React.Fragment>
+      {dark && (
+        <Global
+          styles={css`
+            .au-footer.au-footer--dark {
+              border-color: #f36c52;
+              background-color: #162845;
+            }
+          `}
+        />
+      )}
+      <footer
+        className="au-body au-body--dark au-footer au-footer--dark"
+        role="contentinfo"
+        // css={
+        //   dark && {
+        //     borderColor: '#f36c52 !important',
+        //     backgroundColor: '#162845 !important',
+        //   }
+        // }
+        // style={{ background: 'red' }}
+      >
         <div className="container">
           {children ? (
             <nav className="au-footer__navigation row" aria-label="footer">
@@ -69,6 +81,6 @@ export const Footer = ({ children }: FooterProps) => {
           </div>
         </div>
       </footer>
-    </>
+    </React.Fragment>
   );
 };
