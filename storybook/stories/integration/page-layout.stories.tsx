@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Header } from '@ag.ds/header';
-import { MainNav, MainNavLink } from '@ag.ds/main-nav';
+import { MainNav, MainNavLink, UserMenu } from '@ag.ds/main-nav';
 import { Footer, FooterLink } from '@ag.ds/footer';
 import { Column, Container, Row } from '@ag.ds/grid-12';
 import { Heading } from '@ag.ds/heading';
@@ -9,10 +9,15 @@ export default {
   title: 'Integration/Page Layout',
 };
 
+const MockUserMenu = () => {
+  const [signedIn, setSignedIn] = useState(false);
+  return <UserMenu signIn={() => setSignedIn(true)} signOut={() => setSignedIn(false)} signedIn={signedIn} />;
+};
+
 export const Basic = () => (
   <>
     <Header />
-    <MainNav>
+    <MainNav UserMenuComponent={MockUserMenu}>
       <MainNavLink href={'/'} title={'Home'} active={true} />
       <MainNavLink href={'/establishments'} title={'Establishments'} />
       <MainNavLink href={'/intelligence'} title={'Data and Insights'} />
