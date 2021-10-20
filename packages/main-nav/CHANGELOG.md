@@ -1,5 +1,11 @@
 # @ag.ds/main-nav
 
+## 0.0.11
+
+### Patch Changes
+
+- dad9c76: User menu link is a link not text
+
 ## 0.0.10
 
 ### Patch Changes
