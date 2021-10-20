@@ -1,6 +1,6 @@
 {
   "name": "@ag.ds/main-nav",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "license": "MIT",
   "main": "dist/ag.ds-main-nav.cjs.js",
   "module": "dist/ag.ds-main-nav.esm.js",
