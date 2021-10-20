@@ -1,5 +1,13 @@
 # @ag.ds/main-nav
 
+## 0.0.9
+
+### Patch Changes
+
+- 6df3d1b: Add Field and Text Input packages
+- Updated dependencies [6df3d1b]
+  - @ag.ds/core@0.0.7
+
 ## 0.0.8
 
 ### Patch Changes

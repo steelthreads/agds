@@ -1,5 +1,24 @@
 # @ag.ds/storybook
 
+## 0.0.7
+
+### Patch Changes
+
+- Updated dependencies [e032603]
+- Updated dependencies [b1b7433]
+- Updated dependencies [6df3d1b]
+- Updated dependencies [e032603]
+- Updated dependencies [e032603]
+- Updated dependencies [6df3d1b]
+  - @ag.ds/grid-12@0.0.2
+  - @ag.ds/breadcrumb@0.0.3
+  - @ag.ds/heading@0.0.3
+  - @ag.ds/link-list@0.0.1
+  - @ag.ds/footer@0.0.10
+  - @ag.ds/core@0.0.7
+  - @ag.ds/header@0.0.8
+  - @ag.ds/main-nav@0.0.9
+
 ## 0.0.6
 
 ### Patch Changes

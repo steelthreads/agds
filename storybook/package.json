@@ -1,6 +1,6 @@
 {
   "name": "@ag.ds/storybook",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,14 +15,14 @@
     "@storybook/react": "^6.3.8"
   },
   "dependencies": {
-    "@ag.ds/breadcrumb": "0.0.2",
-    "@ag.ds/core": "0.0.6",
-    "@ag.ds/footer": "0.0.9",
-    "@ag.ds/grid-12": "0.0.1",
-    "@ag.ds/header": "0.0.7",
-    "@ag.ds/heading": "0.0.2",
-    "@ag.ds/link-list": "0.0.0",
-    "@ag.ds/main-nav": "0.0.8"
+    "@ag.ds/breadcrumb": "0.0.3",
+    "@ag.ds/core": "0.0.7",
+    "@ag.ds/footer": "0.0.10",
+    "@ag.ds/grid-12": "0.0.2",
+    "@ag.ds/header": "0.0.8",
+    "@ag.ds/heading": "0.0.3",
+    "@ag.ds/link-list": "0.0.1",
+    "@ag.ds/main-nav": "0.0.9"
   },
   "repository": "https://github.com/steelthreads/agds/tree/main/storybook"
 }

@@ -1,5 +1,14 @@
 # @ag.ds/footer
 
+## 0.0.10
+
+### Patch Changes
+
+- e032603: Can accept an array of children
+- 6df3d1b: Add Field and Text Input packages
+- Updated dependencies [6df3d1b]
+  - @ag.ds/core@0.0.7
+
 ## 0.0.9
 
 ### Patch Changes

@@ -1,11 +1,11 @@
 {
   "name": "@ag.ds/header",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "MIT",
   "main": "dist/ag.ds-header.cjs.js",
   "module": "dist/ag.ds-header.esm.js",
   "dependencies": {
-    "@ag.ds/core": "0.0.6",
+    "@ag.ds/core": "0.0.7",
     "@babel/runtime": "^7.15.4",
     "@gold.au/header": "^5.0.0"
   },
