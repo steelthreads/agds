@@ -1,12 +1,14 @@
 import React from 'react';
 
-export interface LinkProps {
+// eslint-disable-next-line no-unused-vars, no-undef
+export type LinkFactoryType = (p: LinkProps) => JSX.Element;
+
+export type LinkProps = {
   href: string;
   children: React.ReactNode;
   [key: string]: any;
-}
+};
 
-// eslint-disable-next-line react/display-name
 export const Link = ({ href, children, ...rest }: LinkProps) => {
   return (
     <a href={href} {...rest}>

@@ -5,7 +5,7 @@ export default {
   title: 'AgDS/Button',
 };
 
-export const Basic = <Button>Click me</Button>;
+export const Basic = () => <Button>Click me</Button>;
 
 export const Disabled = () => <Button disabled>Disabled</Button>;
 

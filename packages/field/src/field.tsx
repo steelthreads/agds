@@ -4,7 +4,7 @@ import { FieldLabel, FieldHint, FieldError } from '.';
 type FieldRenderProps = {};
 
 export type FieldProps = {
-  id?: string;
+  id: string;
   invalidMsg?: string;
   description?: string;
   labelVisible?: boolean;

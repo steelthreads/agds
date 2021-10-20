@@ -1,24 +1,31 @@
+/** @jsxRuntime classic */
+/** @jsx jsx */
+
+import { jsx, CSSObject } from '@emotion/react';
 import React from 'react';
 
-interface ContainerProps {
+type ContainerProps = {
   fluid?: boolean;
   children: React.ReactElement<typeof Row> | React.ReactElement<typeof Row>[];
-}
+  style?: CSSObject;
+};
 
-export const Container = ({ children, fluid = false }: ContainerProps) => (
-  <div className={fluid ? 'container-fluid' : 'container'}>{children}</div>
+export const Container = ({ children, fluid = false, style }: ContainerProps) => (
+  <div className={fluid ? 'container-fluid' : 'container'} css={style}>
+    {children}
+  </div>
 );
 
-interface RowProps {
+type RowProps = {
   children: React.ReactElement<typeof Column> | React.ReactElement<typeof Column>[];
-}
+};
 
 export const Row = ({ children }: RowProps) => <div className="row">{children}</div>;
 
-interface ColumnProps {
+type ColumnProps = {
   className: string;
   children: React.ReactNode | React.ReactNode[];
-}
+};
 
 export const Column = ({ children, className }: ColumnProps) => {
   return <div className={className}>{children}</div>;

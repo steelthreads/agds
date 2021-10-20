@@ -17,5 +17,7 @@ export const WithLinks = () => (
 export const WithExternalLinks = () => (
   <Footer>
     <FooterLink href={'https://gold.designsystemau.org'} title={'GOLD'} />
+    <FooterLink href={'https://gold.designsystemau.org'} title={'GOLD'} />
+    <FooterLink href={'https://gold.designsystemau.org'} title={'GOLD'} />
   </Footer>
 );

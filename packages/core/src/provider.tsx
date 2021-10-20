@@ -1,27 +1,20 @@
 import React, { createContext, useContext } from 'react';
-import { Link, LinkProps } from './default-link';
+import { Link, LinkFactoryType } from './default-link';
 
 import PancakeCss from './__generated__/pancake-css';
 
-// eslint-disable-next-line no-unused-vars, no-undef
-export type LinkFactoryType = (props: LinkProps) => JSX.Element;
-
 type State = {
-  linkFactory?: LinkFactoryType;
+  linkFactory: LinkFactoryType;
 };
 
 export const Context = createContext<State>({
   linkFactory: Link,
 });
 
-export const useLink = (): LinkFactoryType => {
-  return useContext(Context).linkFactory;
-};
-
-interface AgdsProviderProps {
+type AgdsProviderProps = {
   linkFactory?: LinkFactoryType;
   children: React.ReactNode;
-}
+};
 
 export const AgdsProvider = ({ linkFactory = Link, children }: AgdsProviderProps) => {
   return (
@@ -32,4 +25,8 @@ export const AgdsProvider = ({ linkFactory = Link, children }: AgdsProviderProps
       </Context.Provider>
     </>
   );
+};
+
+export const useLink = (): LinkFactoryType => {
+  return useContext(Context).linkFactory;
 };

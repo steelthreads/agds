@@ -1,8 +1,6 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useLink } from '@ag.ds/core';
 import { Global, css } from '@emotion/react';
-
-const YEAR = new Date().getFullYear();
 
 interface FooterLinkItemProps {
   href: string;
@@ -33,16 +31,24 @@ interface FooterProps {
 }
 
 export const Footer = ({ children }: FooterProps) => {
+  const year = useMemo(() => new Date().getFullYear(), []);
+  const dark = true;
+
   return (
-    <>
-      <Global
-        styles={css`
-          .au-footer.au-footer--dark {
-            border-color: #f36c52;
-            background-color: #162845;
-          }
-        `}
-      />
+    <React.Fragment>
+      {dark && (
+        <Global
+          styles={css`
+            .au-footer.au-footer--dark {
+              border-color: #f36c52;
+              background-color: #162845;
+            }
+            .au-footer li {
+              margin-right: 1em;
+            }
+          `}
+        />
+      )}
       <footer className="au-body au-body--dark au-footer au-footer--dark" role="contentinfo">
         <div className="container">
           {children ? (
@@ -56,7 +62,7 @@ export const Footer = ({ children }: FooterProps) => {
             <div className="col-sm-12">
               <div className="au-footer__end">
                 <p style={{ marginBottom: '1em' }}>
-                  &copy; {YEAR} Department of Agriculture, Water and the Environment
+                  &copy; {year} Department of Agriculture, Water and the Environment
                 </p>
                 <p>
                   We acknowledge the traditional owners of country throughout Australia and recognise their continuing
@@ -68,6 +74,6 @@ export const Footer = ({ children }: FooterProps) => {
           </div>
         </div>
       </footer>
-    </>
+    </React.Fragment>
   );
 };
