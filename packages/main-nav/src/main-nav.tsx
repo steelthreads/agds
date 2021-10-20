@@ -82,7 +82,7 @@ export const MainNav = ({ children }: MainNavProps) => {
                 </button>
                 <div className="au-main-nav__menu">
                   <div className="au-main-nav__menu-inner">
-                    <div className="au-main-nav__focus-trap-top"/>
+                    <div className="au-main-nav__focus-trap-top" />
                     <button
                       aria-controls="main-nav-default"
                       className="au-main-nav__toggle au-main-nav__toggle--close"
@@ -91,7 +91,7 @@ export const MainNav = ({ children }: MainNavProps) => {
                       Close
                     </button>
                     <ul className="au-link-list">{children}</ul>
-                    <div className="au-main-nav__focus-trap-bottom"/>
+                    <div className="au-main-nav__focus-trap-bottom" />
                   </div>
                 </div>
                 <div
