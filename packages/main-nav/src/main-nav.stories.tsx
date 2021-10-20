@@ -21,15 +21,15 @@ export const Basic = Template.bind({});
 Basic.args = {};
 
 const SampleUserMenu = () => {
-  const [signedIn, setSignedIn] = useState(false);
+  const [signedIn, setSignedIn] = useState(true);
   return (
     <UserMenu
       signIn={() => {
-        alert('sign in');
+        // alert('sign in');
         setSignedIn(true);
       }}
       signOut={() => {
-        alert('sign out');
+        // alert('sign out');
         setSignedIn(false);
       }}
       signedIn={signedIn}
