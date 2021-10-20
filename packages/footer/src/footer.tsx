@@ -49,17 +49,7 @@ export const Footer = ({ children }: FooterProps) => {
           `}
         />
       )}
-      <footer
-        className="au-body au-body--dark au-footer au-footer--dark"
-        role="contentinfo"
-        // css={
-        //   dark && {
-        //     borderColor: '#f36c52 !important',
-        //     backgroundColor: '#162845 !important',
-        //   }
-        // }
-        // style={{ background: 'red' }}
-      >
+      <footer className="au-body au-body--dark au-footer au-footer--dark" role="contentinfo">
         <div className="container">
           {children ? (
             <nav className="au-footer__navigation row" aria-label="footer">
