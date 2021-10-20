@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { MainNav, MainNavLink, UserMenu } from '.';
 
@@ -20,12 +20,25 @@ export const Basic = Template.bind({});
 // @ts-ignore
 Basic.args = {};
 
-const MockUserMenu = () => (
-  <UserMenu signIn={() => alert('sign in')} signOut={() => alert('sign out')} signedIn={true} />
-);
+const SampleUserMenu = () => {
+  const [signedIn, setSignedIn] = useState(false);
+  return (
+    <UserMenu
+      signIn={() => {
+        alert('sign in');
+        setSignedIn(true);
+      }}
+      signOut={() => {
+        alert('sign out');
+        setSignedIn(false);
+      }}
+      signedIn={signedIn}
+    />
+  );
+};
 
 export const WithUserMenu = () => (
-  <MainNav UserMenuComponent={MockUserMenu}>
+  <MainNav UserMenuComponent={SampleUserMenu}>
     <MainNavLink href={'/'} title={'Home'} active={true} />
     <MainNavLink href={'/establishments'} title={'Establishments'} />
     <MainNavLink href={'/intelligence'} title={'Data and Insights'} />
