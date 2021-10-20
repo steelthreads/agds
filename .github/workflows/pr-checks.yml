@@ -28,7 +28,7 @@ jobs:
       - name: Check
         run: |
           yarn manypkg check
-          yarn lint
           yarn build
+          yarn lint
           yarn types
           yarn test

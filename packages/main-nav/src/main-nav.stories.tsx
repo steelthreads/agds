@@ -12,6 +12,7 @@ const Template = (args) => (
   <MainNav {...args}>
     <MainNavLink href={'/'} title={'Home'} active={true} />
     <MainNavLink href={'/establishments'} title={'Establishments'} />
+    <MainNavLink href={'/intelligence'} title={'Data and Insights'} />
   </MainNav>
 );
 

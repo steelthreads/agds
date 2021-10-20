@@ -1,7 +1,7 @@
 import React from 'react';
 
-// eslint-disable-next-line no-unused-vars
-export type LinkFactoryType = (p: LinkProps) => React.ElementType;
+// eslint-disable-next-line no-unused-vars, no-undef
+export type LinkFactoryType = (p: LinkProps) => JSX.Element;
 
 export type LinkProps = {
   href: string;
@@ -16,5 +16,3 @@ export const Link = ({ href, children, ...rest }: LinkProps) => {
     </a>
   );
 };
-
-Link.displayName = 'Link';

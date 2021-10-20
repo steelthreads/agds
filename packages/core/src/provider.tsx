@@ -4,7 +4,7 @@ import { Link, LinkFactoryType } from './default-link';
 import PancakeCss from './__generated__/pancake-css';
 
 type State = {
-  linkFactory?: LinkFactoryType;
+  linkFactory: LinkFactoryType;
 };
 
 export const Context = createContext<State>({
@@ -16,7 +16,7 @@ type AgdsProviderProps = {
   children: React.ReactNode;
 };
 
-export const AgdsProvider = ({ linkFactory, children }: AgdsProviderProps) => {
+export const AgdsProvider = ({ linkFactory = Link, children }: AgdsProviderProps) => {
   return (
     <>
       <PancakeCss />
@@ -27,6 +27,6 @@ export const AgdsProvider = ({ linkFactory, children }: AgdsProviderProps) => {
   );
 };
 
-export const useLink = (): LinkFactoryType | undefined => {
+export const useLink = (): LinkFactoryType => {
   return useContext(Context).linkFactory;
 };
