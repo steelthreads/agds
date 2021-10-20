@@ -1,28 +1,19 @@
+/** @jsxRuntime classic */
+/** @jsx jsx */
+
 import React from 'react';
-import { Global, css } from '@emotion/react';
+import { Global, css, jsx } from '@emotion/react';
 import { useLink } from '@ag.ds/core';
 import cx from 'classnames';
+import { UserMenu } from './user-menu';
 
-interface NavLinkProps {
-  href: string;
-  title: string;
-  active?: boolean;
-}
-
-export const MainNavLink = ({ href, title, active = false }: NavLinkProps) => {
-  const Link = useLink();
-  return (
-    <li className={cx(active && 'active')}>
-      <Link href={href}>{title}</Link>
-    </li>
-  );
+type MainNavProps = {
+  children: React.ReactElement<typeof MainNavLink>[];
+  // component constructor
+  UserMenuComponent?: () => React.ReactElement<typeof UserMenu>;
 };
 
-interface MainNavProps {
-  children: React.ReactElement<typeof MainNavLink>[];
-}
-
-export const MainNav = ({ children }: MainNavProps) => {
+export const MainNav = ({ children, UserMenuComponent }: MainNavProps) => {
   const dark = true;
   return (
     <React.Fragment>
@@ -70,7 +61,7 @@ export const MainNav = ({ children }: MainNavProps) => {
       <nav className={'au-main-nav au-main-nav--dark'} aria-label="main">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
+            <div className={UserMenuComponent ? 'col-md-9' : 'col-md-12'}>
               <div id="main-nav-default" className="au-main-nav__content">
                 <button
                   aria-controls="main-nav-default"
@@ -101,9 +92,29 @@ export const MainNav = ({ children }: MainNavProps) => {
                 />
               </div>
             </div>
+            {UserMenuComponent && (
+              <div className="col-md-3" css={{ height: '100%' }}>
+                <UserMenuComponent />
+              </div>
+            )}
           </div>
         </div>
       </nav>
     </React.Fragment>
+  );
+};
+
+interface NavLinkProps {
+  href: string;
+  title: string;
+  active?: boolean;
+}
+
+export const MainNavLink = ({ href, title, active = false }: NavLinkProps) => {
+  const Link = useLink();
+  return (
+    <li className={cx(active && 'active')}>
+      <Link href={href}>{title}</Link>
+    </li>
   );
 };
