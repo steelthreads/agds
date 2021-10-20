@@ -7,14 +7,15 @@ export default {
   title: 'AgDS/Main Nav',
 };
 
+// @ts-ignore
 const Template = (args) => (
   <MainNav {...args}>
-    <MainNavLink href={'/intelligence'} title={'Intelligence'} active={true} />
+    <MainNavLink href={'/'} title={'Home'} active={true} />
     <MainNavLink href={'/establishments'} title={'Establishments'} />
-    <MainNavLink href={'/profile'} title={'Profile'} />
   </MainNav>
 );
 
 export const Basic = Template.bind({});
 
+// @ts-ignore
 Basic.args = {};

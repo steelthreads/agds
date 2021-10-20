@@ -13,10 +13,12 @@ export const Basic = () => (
   </LinkList>
 );
 
-export const Inline = () => (
+export const InlineWithActive = () => (
   <LinkList inline>
     <LinkListItem href={'/#tab-1'}>Slaughter and carcase</LinkListItem>
     <LinkListItem href={'/#tab-2'}>Offal</LinkListItem>
-    <LinkListItem href={'/#tab-3'}>Boning room</LinkListItem>
+    <LinkListItem href={'/#tab-3'} active>
+      Boning room
+    </LinkListItem>
   </LinkList>
 );
