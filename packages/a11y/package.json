@@ -1,11 +1,11 @@
 {
   "name": "@ag.ds/a11y",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/ag.ds-a11y.cjs.js",
   "module": "dist/ag.ds-a11y.esm.js",
   "dependencies": {
-    "@ag.ds/util": "0.0.0",
+    "@ag.ds/util": "0.0.1",
     "@babel/runtime": "^7.15.4"
   },
   "peerDependencies": {

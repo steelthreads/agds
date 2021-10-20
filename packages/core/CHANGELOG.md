@@ -1,5 +1,11 @@
 # @ag.ds/core
 
+## 0.0.7
+
+### Patch Changes
+
+- 6df3d1b: Add Field and Text Input packages
+
 ## 0.0.6
 
 ### Patch Changes
