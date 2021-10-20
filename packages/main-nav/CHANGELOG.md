@@ -1,5 +1,11 @@
 # @ag.ds/main-nav
 
+## 0.0.10
+
+### Patch Changes
+
+- 716a3fe: Add user menu
+
 ## 0.0.9
 
 ### Patch Changes
