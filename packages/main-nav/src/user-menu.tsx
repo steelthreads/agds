@@ -4,7 +4,6 @@
 import { jsx } from '@emotion/react';
 import React from 'react';
 import { UserMenuIcon } from './user-menu-icon.svg';
-import { Text } from '@ag.ds/text';
 
 export type UserMenuProps = {
   signIn: () => unknown;
@@ -22,27 +21,44 @@ export const UserMenu = ({ signIn, signOut, signedIn }: UserMenuProps) => {
         alignItems: 'center',
         verticalAlign: 'middle',
         textAlign: 'right',
+        flexDirection: 'row-reverse',
       }}
     >
       {signedIn === undefined ? null : signedIn ? (
         <React.Fragment>
-          <Text
-            as={'span'}
-            style={{ flex: 1, fontSize: '1rem', lineHeight: '1.5', padding: '1rem', paddingRight: '0.8rem' }}
-            onClick={signOut}
+          <UserMenuIcon />
+          <a
+            href={''}
+            style={{
+              fontSize: '1rem',
+              lineHeight: '1.5',
+              padding: '1rem',
+              paddingRight: '0.8rem',
+            }}
+            onClick={(e) => {
+              e.preventDefault();
+              signOut();
+            }}
           >
             Sign out
-          </Text>
-          <UserMenuIcon />
+          </a>
         </React.Fragment>
       ) : (
-        <Text
-          as={'span'}
-          style={{ flex: 1, fontSize: '1rem', lineHeight: '1.5', padding: '1rem', paddingRight: '0.8rem' }}
-          onClick={signIn}
+        <a
+          href={''}
+          style={{
+            fontSize: '1rem',
+            lineHeight: '1.5',
+            padding: '1rem',
+            paddingRight: '0.8rem',
+          }}
+          onClick={(e) => {
+            e.preventDefault();
+            signIn();
+          }}
         >
           Sign in
-        </Text>
+        </a>
       )}
     </div>
   );
