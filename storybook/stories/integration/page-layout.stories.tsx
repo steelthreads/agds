@@ -9,7 +9,7 @@ export default {
   title: 'Integration/Page Layout',
 };
 
-const MockUserMenu = () => {
+const SampleUserMenu = () => {
   const [signedIn, setSignedIn] = useState(false);
   return <UserMenu signIn={() => setSignedIn(true)} signOut={() => setSignedIn(false)} signedIn={signedIn} />;
 };
@@ -17,7 +17,7 @@ const MockUserMenu = () => {
 export const Basic = () => (
   <>
     <Header />
-    <MainNav UserMenuComponent={MockUserMenu}>
+    <MainNav UserMenuComponent={SampleUserMenu}>
       <MainNavLink href={'/'} title={'Home'} active={true} />
       <MainNavLink href={'/establishments'} title={'Establishments'} />
       <MainNavLink href={'/intelligence'} title={'Data and Insights'} />
