@@ -1605,6 +1605,18 @@
     "@gold.au/pancake-react" "~2.0.0"
     "@gold.au/pancake-sass" "~3.0.0"
 
+"@gold.au/page-alerts@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@gold.au/page-alerts/-/page-alerts-3.0.0.tgz#0f5b2f5ccde7f28034f1faecf4e24986491af55c"
+  integrity sha512-OHqcAYligckYQEdKcrinMBAZ73q+icyn3GP8X+398rDSU1Fj1vecIy43z2yBxLFdv/47yTZ8Ci8hwFZuKObijg==
+  dependencies:
+    "@gold.au/body" "^3.0.0"
+    "@gold.au/core" "^5.0.0"
+    "@gold.au/pancake" "~2.0.0"
+    "@gold.au/pancake-json" "~2.0.0"
+    "@gold.au/pancake-react" "~2.0.0"
+    "@gold.au/pancake-sass" "~3.0.0"
+
 "@gold.au/pancake-js@~2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@gold.au/pancake-js/-/pancake-js-2.0.0.tgz#fcf407f47f5c4c985f7336b6ea22e80ab3b11ea2"

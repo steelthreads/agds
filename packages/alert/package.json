@@ -1,0 +1,22 @@
+{
+  "name": "@ag.ds/alert",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "dist/ag.ds-alert.cjs.js",
+  "module": "dist/ag.ds-alert.esm.js",
+  "dependencies": {
+    "@babel/runtime": "^7.15.4",
+    "@gold.au/page-alerts": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.4.0",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.4.1",
+    "@types/react": "^17.0.27",
+    "@types/react-dom": "^17.0.9",
+    "react": "^17.0.2"
+  },
+  "repository": "https://github.com/steelthreads/agds/tree/main/packages/alert"
+}
