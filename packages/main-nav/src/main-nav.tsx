@@ -93,7 +93,7 @@ export const MainNav = ({ children, UserMenuComponent }: MainNavProps) => {
               </div>
             </div>
             {UserMenuComponent && (
-              <div className="col-md-3" css={{ height: '100%' }}>
+              <div className="col-md-3">
                 <UserMenuComponent />
               </div>
             )}

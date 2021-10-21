@@ -11,47 +11,38 @@ export type UserMenuProps = {
   signedIn?: boolean;
 };
 
+const linkStyles = {
+  fontSize: '1rem',
+  lineHeight: '1.5',
+  padding: '1rem',
+  paddingRight: '0.8rem',
+};
+
 export const UserMenu = ({ signIn, signOut, signedIn }: UserMenuProps) => {
   return (
-    <div
-      css={{
-        display: 'flex',
-        height: '100%',
-        color: '#9EE8FF',
-        alignItems: 'center',
-        verticalAlign: 'middle',
-        textAlign: 'right',
-        flexDirection: 'row-reverse',
-      }}
-    >
+    <div css={{ float: 'right', display: 'inline-block' }}>
       {signedIn === undefined ? null : signedIn ? (
-        <React.Fragment>
-          <UserMenuIcon />
-          <a
-            href={''}
-            style={{
-              fontSize: '1rem',
-              lineHeight: '1.5',
-              padding: '1rem',
-              paddingRight: '0.8rem',
-            }}
-            onClick={(e) => {
-              e.preventDefault();
-              signOut();
-            }}
-          >
-            Sign out
-          </a>
-        </React.Fragment>
+        <div css={{ display: 'flex', alignItems: 'center', verticalAlign: 'middle' }}>
+          <div>
+            <a
+              href={''}
+              style={linkStyles}
+              onClick={(e) => {
+                e.preventDefault();
+                signOut();
+              }}
+            >
+              Sign out
+            </a>
+          </div>
+          <div>
+            <UserMenuIcon />
+          </div>
+        </div>
       ) : (
         <a
           href={''}
-          style={{
-            fontSize: '1rem',
-            lineHeight: '1.5',
-            padding: '1rem',
-            paddingRight: '0.8rem',
-          }}
+          style={linkStyles}
           onClick={(e) => {
             e.preventDefault();
             signIn();
