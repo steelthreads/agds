@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Select, Option } from '.';
 
 export default {
-  title: 'AgDS/Select',
+  title: 'Forms/Select',
 };
 
 export const Basic = () => {
