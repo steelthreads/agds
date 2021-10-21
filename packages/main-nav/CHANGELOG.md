@@ -1,5 +1,11 @@
 # @ag.ds/main-nav
 
+## 0.0.12
+
+### Patch Changes
+
+- 8822a75: Improve CSS
+
 ## 0.0.11
 
 ### Patch Changes
