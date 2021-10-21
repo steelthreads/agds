@@ -1,6 +1,6 @@
 {
   "name": "@ag.ds/select-field",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/ag.ds-select-field.cjs.js",
   "module": "dist/ag.ds-select-field.esm.js",
