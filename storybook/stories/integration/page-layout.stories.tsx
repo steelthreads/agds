@@ -9,7 +9,7 @@ export default {
   title: 'Integration/Page Layout',
 };
 
-const SampleUserMenu = () => {
+const BasicUserMenu = () => {
   const [signedIn, setSignedIn] = useState(false);
   return <UserMenu signIn={() => setSignedIn(true)} signOut={() => setSignedIn(false)} signedIn={signedIn} />;
 };
@@ -17,7 +17,7 @@ const SampleUserMenu = () => {
 export const Basic = () => (
   <>
     <Header />
-    <MainNav UserMenuComponent={SampleUserMenu}>
+    <MainNav UserMenuComponent={BasicUserMenu}>
       <MainNavLink href={'/'} title={'Home'} active={true} />
       <MainNavLink href={'/establishments'} title={'Establishments'} />
       <MainNavLink href={'/intelligence'} title={'Data and Insights'} />
@@ -27,7 +27,7 @@ export const Basic = () => (
         <Column className={'col-xs-12'}>
           <div style={{ height: 300 }}>
             <Heading as={'h1'} size={'xxl'}>
-              Heading 1
+              Page heading 1
             </Heading>
           </div>
         </Column>

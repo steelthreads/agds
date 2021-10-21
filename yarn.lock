@@ -1605,6 +1605,18 @@
     "@gold.au/pancake-react" "~2.0.0"
     "@gold.au/pancake-sass" "~3.0.0"
 
+"@gold.au/page-alerts@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@gold.au/page-alerts/-/page-alerts-3.0.0.tgz#0f5b2f5ccde7f28034f1faecf4e24986491af55c"
+  integrity sha512-OHqcAYligckYQEdKcrinMBAZ73q+icyn3GP8X+398rDSU1Fj1vecIy43z2yBxLFdv/47yTZ8Ci8hwFZuKObijg==
+  dependencies:
+    "@gold.au/body" "^3.0.0"
+    "@gold.au/core" "^5.0.0"
+    "@gold.au/pancake" "~2.0.0"
+    "@gold.au/pancake-json" "~2.0.0"
+    "@gold.au/pancake-react" "~2.0.0"
+    "@gold.au/pancake-sass" "~3.0.0"
+
 "@gold.au/pancake-js@~2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@gold.au/pancake-js/-/pancake-js-2.0.0.tgz#fcf407f47f5c4c985f7336b6ea22e80ab3b11ea2"
@@ -1641,6 +1653,17 @@
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@gold.au/pancake/-/pancake-2.0.0.tgz#7a1b24184370c0d6e5033d8ac0c276f551d104f4"
   integrity sha512-PA9h+AsPmaxY2kVF2dXeawTjhIC0LTB1414O3QvZQTD3GIvzAB5lsfW9a7cmxH+3FuMYhnbjEt7oy1onOzjj/g==
+
+"@gold.au/select@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@gold.au/select/-/select-3.0.0.tgz#ed42dcae107d022de09cffec65620e40fc71cae6"
+  integrity sha512-L7LlfTw8oGvUlc/Vk1vmds6wathPu8M2TD9rVA/J1m04mMBP0SbOVfrA4N3sA9fVY9wXMDjZKLy5zoUMmyFrKg==
+  dependencies:
+    "@gold.au/core" "^5.0.0"
+    "@gold.au/pancake" "~2.0.0"
+    "@gold.au/pancake-json" "~2.0.0"
+    "@gold.au/pancake-react" "~2.0.0"
+    "@gold.au/pancake-sass" "~3.0.0"
 
 "@gold.au/text-inputs@^3.0.0":
   version "3.0.0"

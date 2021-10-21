@@ -25,11 +25,9 @@ const SampleUserMenu = () => {
   return (
     <UserMenu
       signIn={() => {
-        // alert('sign in');
         setSignedIn(true);
       }}
       signOut={() => {
-        // alert('sign out');
         setSignedIn(false);
       }}
       signedIn={signedIn}
