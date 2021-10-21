@@ -1654,6 +1654,17 @@
   resolved "https://registry.yarnpkg.com/@gold.au/pancake/-/pancake-2.0.0.tgz#7a1b24184370c0d6e5033d8ac0c276f551d104f4"
   integrity sha512-PA9h+AsPmaxY2kVF2dXeawTjhIC0LTB1414O3QvZQTD3GIvzAB5lsfW9a7cmxH+3FuMYhnbjEt7oy1onOzjj/g==
 
+"@gold.au/select@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@gold.au/select/-/select-3.0.0.tgz#ed42dcae107d022de09cffec65620e40fc71cae6"
+  integrity sha512-L7LlfTw8oGvUlc/Vk1vmds6wathPu8M2TD9rVA/J1m04mMBP0SbOVfrA4N3sA9fVY9wXMDjZKLy5zoUMmyFrKg==
+  dependencies:
+    "@gold.au/core" "^5.0.0"
+    "@gold.au/pancake" "~2.0.0"
+    "@gold.au/pancake-json" "~2.0.0"
+    "@gold.au/pancake-react" "~2.0.0"
+    "@gold.au/pancake-sass" "~3.0.0"
+
 "@gold.au/text-inputs@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@gold.au/text-inputs/-/text-inputs-3.0.0.tgz#4c2cf3f6d004334ef088afaff208cc29140c6084"
