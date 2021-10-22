@@ -42,3 +42,7 @@ export const WithUserMenu = () => (
     <MainNavLink href={'/intelligence'} title={'Data and Insights'} />
   </MainNav>
 );
+
+export const NoNavItems = () => (
+  <MainNav />
+)
