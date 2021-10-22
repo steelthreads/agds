@@ -108,13 +108,17 @@ interface NavLinkProps {
   href: string;
   title: string;
   active?: boolean;
+  spaLink?: boolean;
 }
 
-export const MainNavLink = ({ href, title, active = false }: NavLinkProps) => {
+export const MainNavLink = ({ href, title, active = false, spaLink = false }: NavLinkProps) => {
   const Link = useLink();
   return (
     <li className={cx(active && 'active')}>
-      <Link href={href}>{title}</Link>
+      {spaLink
+        ? <Link href={href}>{title}</Link>
+        : <a href={href}>{title}</a>
+      }
     </li>
   );
 };

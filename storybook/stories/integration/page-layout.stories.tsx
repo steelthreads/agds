@@ -25,7 +25,7 @@ export const Basic = () => (
     <Container>
       <Row>
         <Column className={'col-xs-12'}>
-          <div style={{ height: 300 }}>
+          <div style={{ height: 300, paddingTop: '2rem', paddingBottom: '2rem' }}>
             <Heading as={'h1'} size={'xxl'}>
               Page heading 1
             </Heading>

@@ -53,7 +53,7 @@ export const Footer = ({ children }: FooterProps) => {
         <div className="container">
           {children ? (
             <nav className="au-footer__navigation row" aria-label="footer">
-              <div className="col-sm-12">
+              <div className="col-sm-8 col-sm-push-2">
                 <ul className="au-link-list au-link-list--inline">{children}</ul>
               </div>
             </nav>
