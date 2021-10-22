@@ -43,6 +43,4 @@ export const WithUserMenu = () => (
   </MainNav>
 );
 
-export const NoNavItems = () => (
-  <MainNav />
-)
+export const NoNavItems = () => <MainNav />;
