@@ -1,5 +1,12 @@
 # @ag.ds/main-nav
 
+## 0.0.13
+
+### Patch Changes
+
+- 82d60f4: Main nav can accept no nav items
+  MainNavLink can be spa type links or anchor tag links
+
 ## 0.0.12
 
 ### Patch Changes

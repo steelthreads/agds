@@ -1,6 +1,6 @@
 {
   "name": "@ag.ds/storybook",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -22,7 +22,7 @@
     "@ag.ds/header": "0.0.8",
     "@ag.ds/heading": "0.0.3",
     "@ag.ds/link-list": "0.0.1",
-    "@ag.ds/main-nav": "0.0.12"
+    "@ag.ds/main-nav": "0.0.13"
   },
   "repository": "https://github.com/steelthreads/agds/tree/main/storybook"
 }
