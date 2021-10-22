@@ -8,7 +8,7 @@ import cx from 'classnames';
 import { UserMenu } from './user-menu';
 
 type MainNavProps = {
-  children: React.ReactElement<typeof MainNavLink>[];
+  children?: React.ReactElement<typeof MainNavLink>[];
   // component constructor
   UserMenuComponent?: () => React.ReactElement<typeof UserMenu>;
 };
@@ -62,36 +62,59 @@ export const MainNav = ({ children, UserMenuComponent }: MainNavProps) => {
         <div className="container">
           <div className="row">
             <div className={UserMenuComponent ? 'col-md-9' : 'col-md-12'}>
-              <div id="main-nav-default" className="au-main-nav__content">
-                <button
-                  aria-controls="main-nav-default"
-                  aria-expanded="false"
-                  className="au-main-nav__toggle au-main-nav__toggle--open"
-                  // onClick="return AU.mainNav.Toggle( this )"
-                >
-                  Menu
-                </button>
-                <div className="au-main-nav__menu">
-                  <div className="au-main-nav__menu-inner">
-                    <div className="au-main-nav__focus-trap-top" />
-                    <button
-                      aria-controls="main-nav-default"
-                      className="au-main-nav__toggle au-main-nav__toggle--close"
-                      // onClick="return AU.mainNav.Toggle( this )"
-                    >
-                      Close
-                    </button>
-                    <ul className="au-link-list">{children}</ul>
-                    <div className="au-main-nav__focus-trap-bottom" />
+              {children ? (
+                <div id="main-nav-default" className="au-main-nav__content">
+                  <button
+                    aria-controls="main-nav-default"
+                    aria-expanded="false"
+                    className="au-main-nav__toggle au-main-nav__toggle--open"
+                    // onClick="return AU.mainNav.Toggle( this )"
+                  >
+                    Menu
+                  </button>
+                  <div className="au-main-nav__menu">
+                    <div className="au-main-nav__menu-inner">
+                      <div className="au-main-nav__focus-trap-top" />
+                      <button
+                        aria-controls="main-nav-default"
+                        className="au-main-nav__toggle au-main-nav__toggle--close"
+                        // onClick="return AU.mainNav.Toggle( this )"
+                      >
+                        Close
+                      </button>
+
+                      <ul className="au-link-list">{children}</ul>
+                      <div className="au-main-nav__focus-trap-bottom" />
+                    </div>
                   </div>
+                  <div
+                    className="au-main-nav__overlay"
+                    aria-controls="main-nav-default"
+                    // onClick="return AU.mainNav.Toggle( this )"
+                  />
                 </div>
-                <div
-                  className="au-main-nav__overlay"
-                  aria-controls="main-nav-default"
-                  // onClick="return AU.mainNav.Toggle( this )"
-                />
-              </div>
+              ) : (
+                <div id="main-nav-default" className="au-main-nav__content">
+                  <button
+                    aria-controls="main-nav-default"
+                    aria-expanded="false"
+                    className="au-main-nav__toggle au-main-nav__toggle--open"
+                    // onClick="return AU.mainNav.Toggle( this )"
+                  >
+                    Menu
+                  </button>
+                  <div className="au-main-nav__menu">
+                    <div className="au-main-nav__menu-inner" css={{ height: '56px' }} />
+                  </div>
+                  <div
+                    className="au-main-nav__overlay"
+                    aria-controls="main-nav-default"
+                    // onClick="return AU.mainNav.Toggle( this )"
+                  />
+                </div>
+              )}
             </div>
+
             {UserMenuComponent && (
               <div className="col-md-3">
                 <UserMenuComponent />
@@ -108,13 +131,14 @@ interface NavLinkProps {
   href: string;
   title: string;
   active?: boolean;
+  spaLink?: boolean;
 }
 
-export const MainNavLink = ({ href, title, active = false }: NavLinkProps) => {
+export const MainNavLink = ({ href, title, active = false, spaLink = false }: NavLinkProps) => {
   const Link = useLink();
   return (
     <li className={cx(active && 'active')}>
-      <Link href={href}>{title}</Link>
+      {spaLink ? <Link href={href}>{title}</Link> : <a href={href}>{title}</a>}
     </li>
   );
 };
