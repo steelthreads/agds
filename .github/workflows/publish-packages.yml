@@ -21,7 +21,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        run: yarn --frozen-lockfile --silent
+        run: yarn --frozen-lockfile
 
       - name: Create "Version Packages" Pull Request --or-- trigger Publish to npm Action
         uses: changesets/action@master

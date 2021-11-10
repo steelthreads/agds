@@ -23,7 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        run: yarn --frozen-lockfile --silent
+        run: yarn --frozen-lockfile
 
       - name: Prepare Storybook
         run: |
