@@ -31,7 +31,7 @@
     "typescript": "^4.4.3"
   },
   "scripts": {
-    "postinstall": "preconstruct build && pancake-to-react",
+    "postinstall": "pancake-to-react && preconstruct build",
     "predev": "preconstruct dev",
     "dev": "manypkg run @ag.ds/storybook dev",
     "prebuild:storybook": "preconstruct build",
