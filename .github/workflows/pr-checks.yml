@@ -27,7 +27,7 @@ jobs:
 
       - name: Check
         run: |
-          yarn manypkg check
+          yarn dep:check
           yarn build
           yarn lint
           yarn types
