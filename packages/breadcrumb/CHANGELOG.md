@@ -1,5 +1,12 @@
 # @ag.ds/breadcrumbs
 
+## 0.0.4
+
+### Patch Changes
+
+- Updated dependencies [43afbfd]
+  - @ag.ds/core@0.0.8
+
 ## 0.0.3
 
 ### Patch Changes

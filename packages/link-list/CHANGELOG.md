@@ -1,6 +1,14 @@
 # @ag.ds/link-list
 
+## 0.0.2
+
+### Patch Changes
+
+- Updated dependencies [43afbfd]
+  - @ag.ds/core@0.0.8
+
 ## 0.0.1
+
 ### Patch Changes
 
 - e032603: Adding link-list and tab-link-list

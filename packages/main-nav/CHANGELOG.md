@@ -1,5 +1,12 @@
 # @ag.ds/main-nav
 
+## 0.0.15
+
+### Patch Changes
+
+- Updated dependencies [43afbfd]
+  - @ag.ds/core@0.0.8
+
 ## 0.0.14
 
 ### Patch Changes
