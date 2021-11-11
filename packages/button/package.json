@@ -1,11 +1,11 @@
 {
   "name": "@ag.ds/button",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "dist/ag.ds-button.cjs.js",
   "module": "dist/ag.ds-button.esm.js",
   "dependencies": {
-    "@ag.ds/core": "0.0.7",
+    "@ag.ds/core": "0.0.8",
     "@babel/runtime": "^7.15.4",
     "@gold.au/buttons": "^4.0.0",
     "classnames": "^2.3.1"

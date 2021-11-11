@@ -1,5 +1,11 @@
 # @ag.ds/core
 
+## 0.0.8
+
+### Patch Changes
+
+- 43afbfd: Bump css
+
 ## 0.0.7
 
 ### Patch Changes

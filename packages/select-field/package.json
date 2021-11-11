@@ -1,11 +1,11 @@
 {
   "name": "@ag.ds/select-field",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "dist/ag.ds-select-field.cjs.js",
   "module": "dist/ag.ds-select-field.esm.js",
   "dependencies": {
-    "@ag.ds/core": "0.0.7",
+    "@ag.ds/core": "0.0.8",
     "@ag.ds/text": "0.0.2",
     "@babel/runtime": "^7.15.4",
     "@gold.au/select": "^3.0.0",

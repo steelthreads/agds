@@ -1,11 +1,11 @@
 {
   "name": "@ag.ds/breadcrumb",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "main": "dist/ag.ds-breadcrumb.cjs.js",
   "module": "dist/ag.ds-breadcrumb.esm.js",
   "dependencies": {
-    "@ag.ds/core": "0.0.7",
+    "@ag.ds/core": "0.0.8",
     "@babel/runtime": "^7.15.4",
     "@gold.au/breadcrumbs": "^4.0.0"
   },
