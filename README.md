@@ -1,3 +1,5 @@
+> **Deprecated**: This repository has been depreacted and is not supported. You may be looking for [AgDS-Next](https://github.com/steelthreads/agds-next) instead.
+
 # Ag Design System 
 
 A system of React Components used by the Department of Agriculture's Export Service apps.
